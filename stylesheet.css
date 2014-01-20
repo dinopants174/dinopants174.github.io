@@ -1,90 +1,94 @@
 html body{
 	margin:0;
 	padding:0;
+	height:100%;
 }
 
 #TitlePage{
-	height:17%;
-	/*height:145px;*/
 	width:98%;
 	margin-top:0px;
 }
 
 #Bio{
-	height:155px;
 	background-color:#6CDBA4;
-	margin-left:225px;
-	margin-top:20px;
+	margin-left:14%;
+	margin-top:1%;
+}
+
+.SMIcon{
+	height:3%;
+	width:3%;
+	margin-left:96%;
+	padding-top:0.4%;
 }
 
 h3{
-	margin-top:-11%;
 	font-weight: normal;
 	color:black;
 	font-family:Arial;
-	padding:20px;
-	padding-left:285px;
-	padding-right:285px;
-	line-height: 160%
+	padding:2%;
+	padding-left:17%;
+	padding-right:17%;
+	margin-top:-11%;
+	line-height: 180%;
 }
 
 ul{
 	list-style-type:none;
-	font-size:30px;
-	font-family:Arial;
-	margin:0px;
-	margin-top:20px;
-	padding:0px;
+	margin:0%;
+	margin-top:1%;
+	padding:0%;
 }
 
 .Navbar{
-	width:200px;
-}
-
-#Home{
-	height:130px;
-	position:fixed;
-	margin-top:-175px;
+	width:12.5%;
 }
 
 .Navbar:hover{
-	width:210px;
+	width:13%;
+	opacity:0.75;
+}
+
+#Home{
+	height:17%;
+	position:fixed;
+	margin-top:-11%;
 }
 
 #Home:hover{
-	height:135px;
+	height:17.5%;
+}
+
+
+#AboutMe{
+	height:15%;
+	margin-top:-1.75%;
+	position:fixed;
 }
 
 #AboutMe:hover{
-	height:120px;
+	height:15.5%;
 }
 
-#AboutMe{
-	height:115px;
-	margin-top:-30px;
+#Portfolio{
+	margin-top:6.5%;
+	height:15%;
 	position:fixed;
 }
 
 #Portfolio:hover{
-	height:155px;
+	height:15.5%;
 }
 
-#Portfolio{
-	margin-top:100px;
-	height:150px;
+#Contact{
+	margin-top:15%;
+	height:19%;
 	position:fixed;
 }
 
 #Contact:hover{
-	height:190px;
+	height:19.5%;
 }
-
-#Contact{
-	margin-top:265px;
-	height:185px;
-	position:fixed;
-}
-
 .Header{
 	background-color:#021D27;
 	color:white;
@@ -149,9 +153,3 @@ ul{
 	text-align:center;
 }
 
-.SMIcon{
-	height:40px;
-	width:40px;
-	margin-left:1290px;
-	padding-top:5px;
-}
