@@ -4,8 +4,9 @@ html body{
 }
 
 #TitlePage{
-	height:145px;
-	width:1550px;
+	height:17%;
+	/*height:145px;*/
+	width:98%;
 	margin-top:0px;
 }
 
@@ -17,7 +18,7 @@ html body{
 }
 
 h3{
-	margin-top:-55px;
+	margin-top:-11%;
 	font-weight: normal;
 	color:black;
 	font-family:Arial;
@@ -152,4 +153,5 @@ ul{
 	height:40px;
 	width:40px;
 	margin-left:1290px;
+	padding-top:5px;
 }
