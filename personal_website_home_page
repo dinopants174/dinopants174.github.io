@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<title>Zoher Ghadyali</title>
+	</head>
+	<body>
+		<img id = "TitlePage" src="file:///C:/Users/zghadyali/Desktop/Title_Page2.jpg"/>
+		<div id="Bio">
+			<a href="https://twitter.com/dinopants174" target="_blank"><img class="SMIcon" src="file:///C:/Users/zghadyali/Desktop/twitter.png"></a>
+			<a href="https://www.facebook.com/zoher.ghadyali" target="_blank"><img class="SMIcon" src="file:///C:/Users/zghadyali/Desktop/facebook.png"></a>
+			<h3>Welcome to my personal portfolio website. I am currently enrolled as a freshman at the Olin College of Engineering. I consider myself a software engineer that specifically enjoys working in front-end design. I am particularly interested in how a user interacts with a given interface and in facilitating that interaction.</h3>
+		</div>
+		<div id="NBar">
+		<ul>
+			<li>
+				<a href="file:///C:/Users/zghadyali/Desktop/personal_website_home_page#TitlePage"><img class="Navbar" id="Home" src="file:///C:/Users/zghadyali/Desktop/Nav_Bar_1.gif"/></a>
+			</li>
+			<li>
+				<a href="file:///C:/Users/zghadyali/Desktop/personal_website_home_page#AMContent"><img class="Navbar" id="AboutMe" src="file:///C:/Users/zghadyali/Desktop/Nav_Bar_2.jpg"/></a>
+			</li>
+			<li>
+				<a href="file:///C:/Users/zghadyali/Desktop/personal_website_home_page#PContent"><img class="Navbar" id="Portfolio" src="file:///C:/Users/zghadyali/Desktop/Nav_Bar_3.jpg"/></a>
+			</li>
+			<li>
+				<a href="file:///C:/Users/zghadyali/Desktop/personal_website_home_page#CContent"><img class="Navbar" id="Contact" src="file:///C:/Users/zghadyali/Desktop/Nav_Bar_4.gif"/></a>
+			</li>
+		</ul>
+		<div id="BackgroundNav"></div>
+		</div>
+		<h2 class="Header" id="AMContent">ABOUT ME</h2>
+			<img id="ProPic" src="file:///C:/Users/zghadyali/Desktop/Ghadyali_Zoher_Final.jpg">
+			<p class="AMText" id="AMP1">I have always had a passion for art as a child. I loved to draw and paint, sometimes using the walls of the townhouse we lived in as my canvas, much to my mother's distress. My love of art has fueled my interest in design. My dad's job had us frequently moving around so as a child, I spent years living in Jamaica, Singapore, and India before settling down in the States. I am hoping to someday study or work abroad.</p>
+			<p class="AMText">Currently, I reside in Needham, Massachusetts, where I am enrolled as a freshman at the Olin College of Engineering. While I do not declare a major for a few semesters, I do intend to pursue Electrical and Computer Engineering, which I discovered I enjoyed while at Olin.</p>
+			<p class="AMText">For my resume, please click <a class="AMLink" href="file:///C:/Users/zghadyali/Documents/Olin%20College%20of%20Engineering/Other/Resume.pdf" target="_blank">here</a>.</p>
+			<p class="AMText">For more information about the work I have done at Olin and individually, please look to my <a class="AMLink" href="file:///C:/Users/zghadyali/Desktop/personal_website_home_page#PContent">portfolio</a>.</p>
+		<h2 class="Header" id="PContent">PORTFOLIO</h2>
+			<h2 id="THeader">T E C H N I C A L</h2>
+			<h2 id="THeader">A R T W O R K</h2>
+		<h2 class="Header" id="CContent">CONTACT</h2>
+	</body>
+</html>

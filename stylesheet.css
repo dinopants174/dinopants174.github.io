@@ -1,0 +1,155 @@
+html body{
+	margin:0;
+	padding:0;
+}
+
+#TitlePage{
+	height:145px;
+	width:1550px;
+	margin-top:0px;
+}
+
+#Bio{
+	height:155px;
+	background-color:#6CDBA4;
+	margin-left:225px;
+	margin-top:20px;
+}
+
+h3{
+	margin-top:-55px;
+	font-weight: normal;
+	color:black;
+	font-family:Arial;
+	padding:20px;
+	padding-left:285px;
+	padding-right:285px;
+	line-height: 160%
+}
+
+ul{
+	list-style-type:none;
+	font-size:30px;
+	font-family:Arial;
+	margin:0px;
+	margin-top:20px;
+	padding:0px;
+}
+
+.Navbar{
+	width:200px;
+}
+
+#Home{
+	height:130px;
+	position:fixed;
+	margin-top:-175px;
+}
+
+.Navbar:hover{
+	width:210px;
+}
+
+#Home:hover{
+	height:135px;
+}
+
+#AboutMe:hover{
+	height:120px;
+}
+
+#AboutMe{
+	height:115px;
+	margin-top:-30px;
+	position:fixed;
+}
+
+#Portfolio:hover{
+	height:155px;
+}
+
+#Portfolio{
+	margin-top:100px;
+	height:150px;
+	position:fixed;
+}
+
+#Contact:hover{
+	height:190px;
+}
+
+#Contact{
+	margin-top:265px;
+	height:185px;
+	position:fixed;
+}
+
+.Header{
+	background-color:#021D27;
+	color:white;
+	height:28px;
+	font-family:Arial;
+	font-weight:normal;
+	font-size:28px;
+	padding:20px;
+	padding-left:60px;
+	margin-left:225px;
+}
+
+#AMContent{
+	margin-top:-5px;
+}
+
+#PContent{
+	margin-top:60px;
+}
+
+#CContent{
+	margin-top:500px;
+	margin-bottom:1000px;
+}
+
+#ProPic{
+	height:380px;
+	width:305px;
+	margin-left:225px;
+}
+
+.AMText{
+	font-family:Arial;
+	font-size:20px;
+	margin-left:555px;
+	margin-right:20px;
+	line-height: 160%;
+}
+
+#AMP1{
+	margin-top:-390px;
+}
+
+.AMLink{
+	text-decoration:none;
+	color:#0088B7;
+}
+
+.AMLink:visited{
+	color:#0088B7;
+}
+
+.AMLink:hover{
+	font-weight:bold;
+	font-size:22px;
+}
+
+#THeader{
+	font-family:Arial;
+	font-weight:bold;
+	font-size:28px;
+	text-align:center;
+}
+
+.SMIcon{
+	height:40px;
+	width:40px;
+	margin-left:1290px;
+}
