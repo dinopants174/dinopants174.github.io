@@ -59,24 +59,23 @@ ul{
 	height:17.5%;
 }
 
-
-#AboutMe{
-	height:15%;
-	margin-top:-25px;
-	position:fixed;
-}
-
-#AboutMe:hover{
-	height:15.5%;
-}
-
 #Portfolio{
-	margin-top:110px;
+	margin-top:-25px;
 	height:15%;
 	position:fixed;
 }
 
 #Portfolio:hover{
+	height:15.5%;
+}
+
+#AboutMe{
+	height:15%;
+	margin-top:110px;
+	position:fixed;
+}
+
+#AboutMe:hover{
 	height:15.5%;
 }
 
@@ -102,16 +101,16 @@ ul{
 }
 
 #AMContent{
-	margin-top:-.1%;
-}
-
-#PContent{
 	margin-top:5%;
 }
 
+#PContent{
+	margin-top:1.5%;
+}
+
 #CContent{
-	margin-top:500px;
-	margin-bottom:1000px;
+	margin-top:4.75%;
+	margin-bottom:75%;
 }
 
 #ProPic{
