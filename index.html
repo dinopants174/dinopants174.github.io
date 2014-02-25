@@ -5,8 +5,22 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="JavaScript.js"></script>
 		<title>Zoher Ghadyali</title>
+		<style type='text/css'>
+			@media screen and (max-width: 800px){
+				.Navbar{
+					display:none;
+				}
+				#Pagewrap{
+					width:750px;
+				}
+				#Bio{
+					margin-left:0;
+				}
+			}
+		</style>
 	</head>
 	<body>
+		<div id = "Pagewrap">
 		<img id = "TitlePage" src="img/Title_Page.jpg"/>
 		<div id="Bio">
 			<a href="http://www.linkedin.com/profile/view?id=299052036&trk=nav_responsive_tab_profile_pic" target="_blank"><img class="SMIcon" src="img/linkedin.png"></a>
@@ -36,8 +50,10 @@
 			<ul id="Pics">
 				<li><img id="ModSim_P1" src="img/ModSim_P1.png">
 					<div><p id ='ModSimP1Text'>In Modeling &amp; Simulation of the Physical World, a required class during my first semester at Olin, I modeled a trophic cascade of sharks, rays, and scallops. I determined how manipulating the fishing rate of the ray population affected all three populations in this ecosystem.</p></div>
-				</div></li>
-				<li><img id="ModSim_P2" src="img/ModSim_P2.png"><div><p id="ModSimP2Text">For my second project in ModSim, my partner and I modeled the movement of the chemotherapy drug gemcitabine through the body. We varied percent targeting and initial dosage of gemcitabine to treat pancreatic cancer. We found that we could exponentially increase initial dosage as percent targeting increased.</p></div>
+				</li>
+				<li><img id="ModSim_P2" src="img/ModSim_P2.png">
+					<div><p id="ModSimP2Text">For my second project in ModSim, my partner and I modeled the movement of the chemotherapy drug gemcitabine through the body. We varied percent targeting and initial dosage of gemcitabine to treat pancreatic cancer. We found that we could exponentially increase initial dosage as percent targeting increased.</p></div>
+				</li>
 			</ul>
 			<h2 id="PHeader">A R T W O R K</h2>
 		<h2 class="Header" id="AMContent">ABOUT ME</h2>
@@ -47,5 +63,6 @@
 			<p class="AMText">For my resume, please click <a class="AMLink" href="https://www.dropbox.com/s/2h1lmf1ilu1g9io/Resume.pdf" target="_blank">here</a>.</p>
 			<p class="AMText">For more information about the work I have done at Olin and individually, please look to my <a class="AMLink" href="#PContent">portfolio</a>.</p>
 		<h2 class="Header" id="CContent">CONTACT</h2>
+		</div>
 	</body>
 </html>

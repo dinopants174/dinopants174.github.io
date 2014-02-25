@@ -1,4 +1,4 @@
-html body{
+#Pagewrap{
 	margin:0 auto;
 	padding:0;
 	height:100%;
@@ -56,7 +56,7 @@ ul{
 
 #Home{
 	margin-top:-11%;
-	height:17%;
+	height:auto;
 	position:fixed;
 }
 
@@ -66,7 +66,7 @@ ul{
 
 #Portfolio{
 	margin-top:-1.5%;
-	height:15%;
+	height:auto;
 	position:fixed;
 }
 
@@ -76,7 +76,7 @@ ul{
 
 #AboutMe{
 	margin-top:7%;
-	height:15%;
+	height:auto;
 	position:fixed;
 }
 
@@ -86,7 +86,7 @@ ul{
 
 #Contact{
 	margin-top:15.5%;
-	height:18.5%;
+	height:auto;
 	position:fixed;
 }
 
@@ -115,7 +115,7 @@ ul{
 }
 
 #Pics{
-	margin-left:14%;
+	margin-left: 14%;
 	list-style-type: none;
 }
 
