@@ -1,205 +1,145 @@
-#Pagewrap{
-	margin:0 auto;
-	padding:0;
-	height:100%;
-	width:1600px;
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: #E0E0E0;
+	height:2542.49px;
 }
 
-#TitlePage{
-	width:98%;
-	margin-top:0px;
-}
-
-#Bio{
-	background-color:#6CDBA4;
-	margin-left:14%;
-	margin-top:1%;
+#pagewrap{
+	width: 980px;
+	margin: 0 auto;
 	height:auto;
 }
 
-.SMIcon{
-	height:3%;
-	width:3%;
-	margin-left:95%;
-	padding-top:0.2%;
-	margin-top:0.25%;
-	padding-bottom:0.4%;
+#Cover_Image{
+	width:100%;
+	position:static;
+	height:auto;
 }
 
-h3{
-	font-weight: normal;
+#NavBar_Bottom{
+	width:980px;
+	position:fixed;
+	background-color:#006AD3;
+	opacity:0.7;
+	height:40px;
+	z-index: 1;
+}
+
+#NBar_Name{
+	font-size: 1.5em;
+	font-family:"Courier New";
+	font-weight:bolder;
 	color:black;
-	font-family:Arial;
-	padding:2%;
-	padding-left:17%;
-	padding-right:17%;
-	margin-top:-12.2%;
-	line-height:180%;
+	margin-top:10px;
+	z-index: 2;
 }
 
-ul{
-	list-style-type:none;
-	margin:0%;
-	margin-top:1%;
-	padding:0%;
-}
-
-.Navbar{
-	width:12%;
-	max-width:none;
-}
-
-.Navbar:hover{
-	width:12.5%;
-	opacity:0.75;
-}
-
-#Home{
-	margin-top:-11%;
-	height:auto;
+#NavBar_Top{
 	position:fixed;
-}
-
-#Home:hover{
-	height:17.5%;
-}
-
-#Portfolio{
-	margin-top:-1.5%;
-	height:auto;
-	position:fixed;
-}
-
-#Portfolio:hover{
-	height:15.5%;
-}
-
-#AboutMe{
-	margin-top:7%;
-	height:auto;
-	position:fixed;
-}
-
-#AboutMe:hover{
-	height:15.5%;
-}
-
-#Contact{
-	margin-top:15.5%;
-	height:auto;
-	position:fixed;
-}
-
-#Contact{
-	height:19%;
-}
-
-
-.Header{
-	background-color:#021D27;
-	color:white;
-	font-family:Arial;
-	font-weight:normal;
-	font-size:1.75em;
-	padding:1.2%;
-	padding-left:4%;
-	margin-left:14%;
-}
-
-#AMContent{
-	margin-top:5%;
-}
-
-#PContent{
-	margin-top:1.5%;
-}
-
-#Pics{
-	margin-left: 14%;
 	list-style-type: none;
-}
-
-#ModSimP1Text{
-	margin-left:27.5%;
-	font-family:Arial;
-	background-color:#0088B7;
-	padding:1.25%;
-	height:17%;
-	width:17%;
-	margin-top:-17%;
-	color:white;
-	font-weight:bold;
-	display:none;
-}
-
-#ModSim_P1:hover{
-	opacity:0.75;
-}
-
-#ModSim_P2:hover{
-	opacity:0.75;
-}
-
-#ModSimP2Text{
-	margin-left:31%;
-	font-family:Arial;
-	background-color:#0088B7;
-	padding:1.25%;
-	height:17%;
-	width:17%;
-	margin-top:-20%;
-	color:white;
-	font-weight:bold;
-	display:none;
-}
-
-#CContent{
-	margin-top:4%;
-	margin-bottom:75%;
-}
-
-#ProPic{
 	height:auto;
-	width:19.5%;
-	margin-left:14%;
-}
-
-.AMText{
-	font-family:Arial;
-	font-size:1.25em;
-	margin-left:35%;
-	margin-right:1%;
-	line-height: 155%;
-}
-
-#AMP1{
-	margin-top:-24%;
-}
-
-.AMLink{
-	text-decoration:none;
-	color:#0088B7;
-}
-
-.AMLink:visited{
-	color:#0088B7;
-}
-
-.AMLink:hover{
-	font-weight:bold;
-}
-
-#PHeader{
-	font-family:Arial;
-	font-weight:bold;
-	font-size:1.75em;
-	text-align:center;
-}
-
-#PHeader2{
-	font-family:Arial;
-	font-weight:bold;
+	margin:0px;
+	margin-top:8px;
 	font-size:1em;
-	text-align:center;
-	margin-top:-1%;
+	font-family: "Agency FB";
+	font-weight: bolder;
+	opacity:1;
+	z-index: 2;
+}
+
+#NavBar_Top li{
+	display:inline;
+	padding:50px;
+	z-index: 2
+}
+
+#NavBar_Top li a:link{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+#NavBar_Top li a:visited{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+#NavBar_Top li a:hover{
+	text-decoration: none;
+	color:orange;
+	opacity:1;
+}
+
+#SMIcons{
+	list-style-type: none;
+	margin:0px;
+	margin-top: -70px;
+	margin-left: -20px;
+}
+
+#SMIcons li{
+	display:inline;
+	padding:5px;
+}
+
+.SM_im{
+	width:36px;
+	height:36px;
+}
+
+#cust_mail{
+	height:30px;
+	width:45px;
+}
+
+#port_bg{
+	width:100%;
+	background-color: #E0E0E0;
+	height:auto;
+}
+
+#PORTFOLIO{
+	margin-left:400px;
+	margin-top:15px;
+	height:60px;
+	width:167px;
+	position:absolute;
+}
+
+#Blank_1{
+	width:100%;
+	height:100px;
+}
+
+.portfolio_images{
+	display: inline-block;
+	width:240px;
+	height:240px;
+	position:relative;
+	margin:0px;
+	padding:0px;
+}
+
+#fade{
+	width:100%;
+	height:2542.49px;
+	display:none;
+	background-color: black;
+	-moz-opacity:0.7;
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	position: absolute;
+	z-index: 90;
+}
+
+#overlay{
+	display:none;
+	position: absolute;
+	left: 25%;
+	top: 25%;
+	padding:25px;
+	background-color: #E0E0E0;
+	width: 50%;
+	height: 50%;
+	z-index: 100;
 }

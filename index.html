@@ -2,67 +2,59 @@
 <html>
 	<head>
 		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<link rel="shortcut icon" href="img/favicon.ico" >
+		<link type="text/css" rel="stylesheet" media="screen and (max-width: 980px)" href="smaller.css"/>
+		<link type="text/css" rel="stylesheet" media="screen and (max-width: 680px)" href="still_smaller.css"/>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="JavaScript.js"></script>
+		<script language="javascript" type="text/javascript" src="scroll.js"></script>
 		<title>Zoher Ghadyali</title>
-		<style type='text/css'>
-			@media screen and (max-width: 800px){
-				.Navbar{
-					display:none;
-				}
-				#Pagewrap{
-					width:750px;
-				}
-				#Bio{
-					margin-left:0;
-				}
-			}
-		</style>
 	</head>
+
 	<body>
-		<div id = "Pagewrap">
-		<img id = "TitlePage" src="img/Title_Page.jpg"/>
-		<div id="Bio">
-			<a href="http://www.linkedin.com/profile/view?id=299052036&trk=nav_responsive_tab_profile_pic" target="_blank"><img class="SMIcon" src="img/linkedin.png"></a>
-			<a href="https://www.facebook.com/zoher.ghadyali" target="_blank"><img class="SMIcon" src="img/facebook.png"></a>
-			<a href="https://twitter.com/dinopants174" target="_blank"><img class="SMIcon" src="img/twitter.png"></a>
-			<h3>Welcome to my personal portfolio website. I am currently enrolled as a freshman at the Olin College of Engineering. I consider myself a software engineer that specifically enjoys working in front-end design. I am particularly interested in how a user interacts with a given interface and in facilitating that interaction.</h3>
-		</div>
-		<div id="NBar">
-			<ul>
-				<li>
-					<a href="#TitlePage"><img class="Navbar" id="Home" src="img/Nav_Bar_1.gif"/></a>
-				</li>
-				<li>
-					<a href="#PContent"><img class="Navbar" id="Portfolio" src="img/Nav_Bar_3.jpg"/></a>
-				</li>
-				<li>
-					<a href="#AMContent"><img class="Navbar" id="AboutMe" src="img/Nav_Bar_2.jpg"/></a>
-				</li>
-				<li>
-					<a href="#CContent"><img class="Navbar" id="Contact" src="img/Nav_Bar_4.gif"/></a>
-				</li>
+		<a 
+    	onclick="document.getElementById('overlay').style.display='none';document.getElementById('fade').style.display='none'"
+    	href="javascript:void(0)"><div id="fade"></div></a>
+		<div id="pagewrap">
+			<div id="NavBar_Bottom">
+			</div>
+			<ul id="NavBar_Top">
+				<li><a href="#port_bg">portfolio</a></li>
+				<li><a href="#ABOUTME">about me</a></li>
+				<li id="NBar_Name">ZOHER GHADYALI</li>
+				<li><a href="https://www.dropbox.com/s/e2nui1xak29jue1/Olin%20Resume%20v2.docx" target="_blank">resume</a></li>
+				<li><a href="#CONTACT">contact</a></li>
 			</ul>
-		</div>		
-		<h2 class="Header" id="PContent">PORTFOLIO</h2>
-			<h2 id="PHeader">T E C H N I C A L</h2>
-			<p id = "PHeader2">Please click any of the pictures for a more detailed review of the project.</p>
-			<ul id="Pics">
-				<li><img id="ModSim_P1" src="img/ModSim_P1.png">
-					<div><p id ='ModSimP1Text'>In Modeling &amp; Simulation of the Physical World, a required class during my first semester at Olin, I modeled a trophic cascade of sharks, rays, and scallops. I determined how manipulating the fishing rate of the ray population affected all three populations in this ecosystem.</p></div>
-				</li>
-				<li><img id="ModSim_P2" src="img/ModSim_P2.png">
-					<div><p id="ModSimP2Text">For my second project in ModSim, my partner and I modeled the movement of the chemotherapy drug gemcitabine through the body. We varied percent targeting and initial dosage of gemcitabine to treat pancreatic cancer. We found that we could exponentially increase initial dosage as percent targeting increased.</p></div>
-				</li>
+
+			<img id="Cover_Image" src="img/cover_im_2.png">
+
+			<ul id="SMIcons">
+				<li><a href="mailto:zoher.ghadyali@students.olin.edu" target="_top"><img id="cust_mail" class="SM_im" src="img/sm_mail.png"></a></li>
+				<li><a href="https://www.facebook.com/zoher.ghadyali" target="_blank"><img class="SM_im" src="img/sm_facebook.png"></a></li>
+				<li><a href="http://www.linkedin.com/pub/zoher-ghadyali/84/19a/630" target="_blank"><img class="SM_im" src="img/sm_linkedin.png"></a></li>
+				<li><a href="https://twitter.com/dinopants174" target="_blank"><img class="SM_im" src="img/sm_twitter.png"></a></li>
+				<li><a href="https://github.com/dinopants174" target="_blank"><img class="SM_im" src="img/sm_github.png"></a></li>
 			</ul>
-			<h2 id="PHeader">A R T W O R K</h2>
-		<h2 class="Header" id="AMContent">ABOUT ME</h2>
-			<img id="ProPic" src="img/Ghadyali_Zoher_Final.jpg">
-			<p class="AMText" id="AMP1">I have always had a passion for art as a child. I loved to draw and paint, sometimes using the walls of the townhouse we lived in as my canvas, much to my mother's distress. My love of art has fueled my interest in design. My dad's job had us frequently moving around so as a child, I spent years living in Jamaica, Singapore, and India before settling down in the States. I am hoping to someday study or work abroad.</p>
-			<p class="AMText">Currently, I reside in Needham, Massachusetts, where I am enrolled as a freshman at the Olin College of Engineering. While I do not declare a major for a few semesters, I do intend to pursue Electrical and Computer Engineering, which I discovered I enjoyed while at Olin.</p>
-			<p class="AMText">For my resume, please click <a class="AMLink" href="https://www.dropbox.com/s/2h1lmf1ilu1g9io/Resume.pdf" target="_blank">here</a>.</p>
-			<p class="AMText">For more information about the work I have done at Olin and individually, please look to my <a class="AMLink" href="#PContent">portfolio</a>.</p>
-		<h2 class="Header" id="CContent">CONTACT</h2>
+			<div id="port_bg">
+				<img id="PORTFOLIO" src="img/portfolio_title.png">
+				<div id="Blank_1"></div>
+ 				<a onclick="document.getElementById('overlay').style.display='block';document.getElementById('fade').style.display='block'" href="javascript:void(0)">
+    				<img class="portfolio_images" src="img/portfolio/im_1.png">
+
+				</a>
+				<div id="overlay">
+    			This is where you will put your inline HTML for the content inside of the overlay
+				</div>
+ 				<img class="portfolio_images" src="img/portfolio/im_3.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_2.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_9.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_4.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_7.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_5.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_10.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_8.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_6.png">
+ 				<img class="portfolio_images" src="img/portfolio/im_11.png">
+ 			</div>
 		</div>
 	</body>
 </html>
