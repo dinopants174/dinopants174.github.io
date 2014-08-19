@@ -132,36 +132,43 @@ html, body{
 	z-index: 90;
 }
 
-#fade1{
-	width:100%;
-	height:2542.49px;
-	display:none;
-	background-color: black;
-	-moz-opacity:0.7;
-	opacity:0.7;
-	filter: alpha(opacity=70);
-	position: absolute;
-	z-index: 90;
-}
-
 .im_info{
 	display:none;
 	position: absolute;
 	left: 24%;
 	top: 92%;
 	padding:25px;
+	padding-top: 0px;
 	background-color: #FFFFFF;
 	width: 50%;
-	height: 50%;
+	height: auto;
 	z-index: 100;
+	font-family: "Rockwell";
 }
 
-#im_1_info{
-
+.title{
+	font-family: "Agency FB";
 }
 
-#im_2_info{
+#SmBrd_1{
+	width:375px;
+	height:auto;
+	display: block;
+	margin:auto;
+}
 
+#SmBrd_2{
+	width:450px;
+	height:auto;
+	display:block;
+	margin:auto;
+}
+
+#TS_1{
+	width:450px;
+	height:auto;
+	display:block;
+	margin:auto;
 }
 
 #port_bg a:hover{

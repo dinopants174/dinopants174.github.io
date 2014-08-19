@@ -35,7 +35,22 @@
 		position: absolute;
 	}
 
-	#im_1_info{
+	.im_info{
 		top:75%;
+	}
+
+	#SmBrd_1{
+	width:100%;
+	height:auto;
+	}
+
+	#SmBrd_2{
+		width:100%;
+		height:auto;
+	}
+
+	#TS_1{
+		width:100%;
+		height:auto;
 	}
 }
