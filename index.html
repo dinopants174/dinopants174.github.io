@@ -7,13 +7,27 @@
 		<link type="text/css" rel="stylesheet" media="screen and (max-width: 680px)" href="still_smaller.css"/>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script language="javascript" type="text/javascript" src="scroll.js"></script>
+		<script language="javascript" type="text/javascript">
+			function f_in(which_im){
+				document.getElementById('fade').style.display = 'block';
+				which_im.style.display = 'block';
+			}
+
+			function f_out(){
+				document.getElementById('fade').style.display = 'none';
+				var elems = document.getElementsByClassName('im_info');
+				for (var i=0; i < elems.length; i++){
+					elems[i].style.display = 'none';
+				}
+			}
+		</script>
 		<title>Zoher Ghadyali</title>
 	</head>
 
 	<body>
-		<a 
-    	onclick="document.getElementById('overlay').style.display='none';document.getElementById('fade').style.display='none'"
-    	href="javascript:void(0)"><div id="fade"></div></a>
+		<a onclick="f_out()"><div id="fade"></div></a>
+		<!-- <a onclick="document.getElementById('im_2_info').style.display='none';document.getElementById('fade1').style.display='none'" href="javascript:void(0)"><div id="fade1"></div></a> -->
+		
 		<div id="pagewrap">
 			<div id="NavBar_Bottom">
 			</div>
@@ -37,14 +51,17 @@
 			<div id="port_bg">
 				<img id="PORTFOLIO" src="img/portfolio_title.png">
 				<div id="Blank_1"></div>
- 				<a onclick="document.getElementById('overlay').style.display='block';document.getElementById('fade').style.display='block'" href="javascript:void(0)">
-    				<img class="portfolio_images" src="img/portfolio/im_1.png">
-
-				</a>
-				<div id="overlay">
+ 				<a onclick="f_in(im_1_info)"><img class="portfolio_images" src="img/portfolio/im_1.png"></a>
+				<div class="im_info" id="im_1_info">
     			This is where you will put your inline HTML for the content inside of the overlay
 				</div>
- 				<img class="portfolio_images" src="img/portfolio/im_3.png">
+
+				<a onclick="f_in(im_2_info)">
+ 					<img class="portfolio_images" src="img/portfolio/im_3.png">
+ 				</a>
+ 				<div class="im_info" id="im_2_info">
+ 				Hopefully this works too, maybe?
+ 				</div>
  				<img class="portfolio_images" src="img/portfolio/im_2.png">
  				<img class="portfolio_images" src="img/portfolio/im_9.png">
  				<img class="portfolio_images" src="img/portfolio/im_4.png">

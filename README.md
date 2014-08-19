@@ -1,6 +1,5 @@
-dinopants174.github.io
-======================
+This is the base repository for the personal website of Zoher Ghadyali.
 
-Personal Website
+This is the second iteration of this personal website, which has been completely redesigned.
 
-These are the files for my personal website, which I started making over winter break at the end of my first semester. To do so, I learned HTML and CSS but as I continue to learn JavaScript, I will update the files here. This is a work in progress.
+Currently, this website is using some basic JavaScript, in addition to HTML and CSS. Please feel free to leave your feedback on my work here.
