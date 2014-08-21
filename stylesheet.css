@@ -2,7 +2,19 @@ html, body{
 	margin: 0;
 	padding: 0;
 	background-color: #E0E0E0;
-	height:2542.49px;
+	height:auto;
+}
+
+#fade{
+	width:100%;
+	height:3000px;
+	display:none;
+	background-color: black;
+	-moz-opacity:0.7;
+	opacity:0.7;
+	filter: alpha(opacity=70);
+	position: absolute;
+	z-index: 90;
 }
 
 #pagewrap{
@@ -120,23 +132,11 @@ html, body{
 	padding:0px;
 }
 
-#fade{
-	width:100%;
-	height:2542.49px;
-	display:none;
-	background-color: black;
-	-moz-opacity:0.7;
-	opacity:0.7;
-	filter: alpha(opacity=70);
-	position: absolute;
-	z-index: 90;
-}
-
 .im_info{
 	display:none;
 	position: absolute;
 	left: 24%;
-	top: 92%;
+	top: 700px;
 	padding:25px;
 	padding-top: 0px;
 	background-color: #FFFFFF;
@@ -185,11 +185,25 @@ html, body{
 	margin:auto;
 }
 
+#TS_2{
+	width:700px;
+	height:auto;
+	display:block;
+	margin:auto;
+}
+
+#TS_3{
+	width:775px;
+	height:auto;
+	display:block;
+	margin:auto;
+}
+
 #port_bg a:hover{
 	opacity:0.7;
 }
 
-#im_1_info a{
+.im_info a{
 	text-decoration: none;
 	color:#006AD3;
 }
@@ -198,7 +212,7 @@ html, body{
 	list-style-type: none;
 	margin:0px;
 	margin-top: -50px;
-	margin-left: 615px;
+	margin-left: 65%;
 }
 
 #ExpIcons li{

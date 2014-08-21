@@ -41,26 +41,43 @@
 
 	#SmBrd_1{
 	width:100%;
-	height:auto;
+	/*height:auto;*/
 	}
 
 	#SmBrd_2{
 		width:100%;
-		height:auto;
+		/*height:auto;*/
 	}
 
 	#SmBrd_3{
 		width:100%;
-		height:auto;
+		/*height:auto;*/
 	}
 
 	#SmBrd_4{
 		width:100%;
-		height:auto;
+		/*height:auto;*/
 	}
 
 	#TS_1{
 		width:100%;
 		height:auto;
+	}
+
+	#TS_2{
+		width:100%;
+		height:auto;
+	}
+	
+	#TS_3{
+		width:100%;
+		height:auto;
+	}
+
+	#ExpIcons{
+	list-style-type: none;
+	margin:0px;
+	margin-top: -50px;
+	margin-left: 56%;
 	}
 }

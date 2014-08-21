@@ -8,10 +8,10 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script language="javascript" type="text/javascript" src="scroll.js"></script>
 		<script language="javascript" type="text/javascript">
-			function f_in(which_im){
-				document.getElementById('fade').style.display = 'block';
-				which_im.style.display = 'block';
-			}
+			 function f_in(which_im){
+			 	document.getElementById('fade').style.display = 'block';
+			 	which_im.style.display = 'block';
+			 }
 
 			function f_out(){
 				document.getElementById('fade').style.display = 'none';
@@ -57,7 +57,9 @@
     				</ul>
     				<img id="SmBrd_1" src="img/port_info/SmBrd_1.png">
     				<img id="SmBrd_2" src="img/port_info/SmBrd_2.png">
-    				<p>In my second semester, I designed and built a program that would take an image of a hand drawn circuit diagram and render it neatly and professionally for use in a lab report or presentation. My group chose this project after realizing that we could essentially automate the conversions we, as students, were doing, using services like Fritzing or LT Spice, to make hand-drawn circuit diagrams appropriate for our lab reports and presentations.</p>
+    				<p>In my second semester, I designed and built a program that would take an image of a hand drawn circuit diagram and render it neatly and professionally for use in a lab report or presentation.</p>
+
+    				<p>My group chose this project after realizing that we could essentially automate the conversions we, as students, were doing, using services like Fritzing or LT Spice, to make hand-drawn circuit diagrams appropriate for our lab reports and presentations.</p>
     				<img id="SmBrd_3" src="img/port_info/SmBrd_3.png">
     				<p>Above is the general pipeline we designed for our service. Our program took the input image in and converted it to black and white, and then to a matrix. We found the central lines of the diagram by looking at where the average darkness was greatest in the rows and columns of the matrix and cropped around segments of the diagram by finding intersections between these central lines.</p>
     				<p>Having isolated each segment, we searched each image for components by looking for any instance of non-white space above and below the central line of each segment. Once we found these instances, we were able to crop to the components within the segment by making an assumption above the maximum distance between each instance. We passed these into a machine learning classifier.</p>
@@ -77,7 +79,13 @@
     					<li><img class="exp_logo" src="img/ard_logo.png"></li>
     				</ul>
  					<img id="TS_1" src="img/port_info/Team_Sailing_1.jpg">
- 					<p>In the summer of 2014, I worked on Olin's campus as part of the Team Sailing Research team. Our goal was to increase the autonomy of blind sailors.</p>
+ 					<p>In the summer of 2014, I worked on Olin's campus as part of the Team Sailing Research team, with Research Scientist Alex Morrow. Our goal was to begin prototyping a system that would increase the autonomy of blind sailors on sailboats. By the end of the summer, we had succeeded in building a platform that took a blind sailor's input in the form of a key-press on a standard 12 button keypad. Each key-press corresponded to a certain piece of information that a Raspberry Pi computer would say aloud to the blind sailor.</p>
+ 					<img id="TS_2" src="img/port_info/TS_2_v2.png">
+ 					<p>Above are two schematics detailing the current interactions of blind sailors and the way our system works in this context. Currently, two blind sailors sail with two sighted guides. The guides are using their vision to relay information to the blind sailors. Our system performs the same action but eliminates the middleman in the current system. The blind sailor only gets the information they requested from each key-press.</p>
+ 					<img id="TS_3" src="img/port_info/TS_3.png">
+ 					<p>The key-presses on our 12 button keypad were read and interpreted by an Arduino Uno, a microprocesser we used due to its easy prototyping capabilities and affordability. Once the Arduino Uno understood which key had been pressed, it communicated that over radio to a credit-card sized computer, the Raspberry Pi.</p>
+ 					<p>The Raspbeery Pi is constantly gathering data and, when it understands which key has been pressed, it performs a text-to-speech conversion. It reads the text file of whatever information that key corresponds to, converts it to an audio file, and recites the information aloud to the blind sailor.</p>
+ 					<p>For more information about this ongoing project, please contact <a href="http://www.olin.edu/faculty/profile/alexander-morrow/" target="_blank">Alex Morrow</a>.</p>
  				</div>
  				<img class="portfolio_images" src="img/portfolio/im_2.png">
  				<img class="portfolio_images" src="img/portfolio/im_9.png">
