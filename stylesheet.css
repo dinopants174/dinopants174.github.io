@@ -164,6 +164,20 @@ html, body{
 	margin:auto;
 }
 
+#SmBrd_3{
+	width:500px;
+	height:auto;
+	display:block;
+	margin:auto;
+}
+
+#SmBrd_4{
+	width:500px;
+	height:auto;
+	display:block;
+	margin:auto;
+}
+
 #TS_1{
 	width:450px;
 	height:auto;
@@ -173,4 +187,26 @@ html, body{
 
 #port_bg a:hover{
 	opacity:0.7;
+}
+
+#im_1_info a{
+	text-decoration: none;
+	color:#006AD3;
+}
+
+#ExpIcons{
+	list-style-type: none;
+	margin:0px;
+	margin-top: -50px;
+	margin-left: 615px;
+}
+
+#ExpIcons li{
+	display:inline;
+	padding:2px;
+}
+
+.exp_logo{
+	width:36px;
+	height:36px;
 }
