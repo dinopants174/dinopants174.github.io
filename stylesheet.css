@@ -2,7 +2,7 @@ html, body{
 	margin: 0;
 	padding: 0;
 	background-color: #E0E0E0;
-	height:auto;
+	height:5000px;
 }
 
 #fade{
@@ -10,9 +10,9 @@ html, body{
 	height:3000px;
 	display:none;
 	background-color: black;
-	-moz-opacity:0.7;
-	opacity:0.7;
-	filter: alpha(opacity=70);
+	-moz-opacity:0.8;
+	opacity:0.8;
+	filter: alpha(opacity=80);
 	position: absolute;
 	z-index: 90;
 }
@@ -183,30 +183,52 @@ html, body{
 	height:36px;
 }
 
-#POP_1{
-	width:500px;
-	height:auto;
-	display:block;
-	margin:auto;
-}
-
 #POP_2{
 	width:400px;
-	height:auto;
-	display:block;
-	margin:auto;
 }
 
-#POP_3{
-	width:500px;
-	height:auto;
-	display:block;
-	margin:auto;
-}
 
 #POP_4{
 	width:400px;
+}
+
+#AM_bg{
+	width:100%;
+	background-color: #161616;
+	height:575px;
+	margin-top:-30px;
+}
+
+#AM_bg a{
+	text-decoration: none;
+	color:#006AD3;
+}
+
+#AM_bg a:hover{
+	color:#00b1ff;
+	/*opacity: 0.8;*/
+}
+
+#ABOUTME{
+	margin-left:20px;
+	margin-top:15px;
+	height:50px;
+	width:167px;
+	position:absolute;
+}
+
+#Self{
+	width:340px;
 	height:auto;
-	display:block;
-	margin:auto;
+	margin-top: 75px;
+	margin-left: 10px;
+}
+
+#AM_content{
+	color:white;
+	font-family: "Agency FB", "Rockwell";
+	margin-left: 390px;
+	margin-top: -450px;
+	font-size: 1.5em;
+	padding:5px;
 }
