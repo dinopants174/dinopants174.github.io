@@ -35,43 +35,60 @@
 		position: absolute;
 	}
 
-	.im_info{
+/*	.im_info{
 		top:75%;
-	}
+	}*/
 
 	#SmBrd_1{
-	width:100%;
-	/*height:auto;*/
+		width:100%;
 	}
 
 	#SmBrd_2{
 		width:100%;
-		/*height:auto;*/
 	}
 
 	#SmBrd_3{
 		width:100%;
-		/*height:auto;*/
 	}
 
 	#SmBrd_4{
 		width:100%;
-		/*height:auto;*/
 	}
 
 	#TS_1{
 		width:100%;
-		height:auto;
 	}
 
 	#TS_2{
 		width:100%;
-		height:auto;
 	}
 	
 	#TS_3{
 		width:100%;
-		height:auto;
+	}
+
+	#POP_1{
+		width:100%;
+	}
+
+	#POP_2{
+		width:100%;
+	}
+
+	#POP_3{
+		width:100%;
+	}
+
+	#POP_4{
+		width:100%;
+	}
+
+	#LA_1{
+		width:100%;
+	}
+
+	#LA_2{
+		width:100%;
 	}
 
 	#ExpIcons{

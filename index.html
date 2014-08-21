@@ -55,15 +55,15 @@
     				<ul id="ExpIcons">
     					<li><img class="exp_logo" src="img/py_logo.png"></li>
     				</ul>
-    				<img id="SmBrd_1" src="img/port_info/SmBrd_1.png">
-    				<img id="SmBrd_2" src="img/port_info/SmBrd_2.png">
+    				<img class="port_info_img" id="SmBrd_1" src="img/port_info/SmBrd_1.png">
+    				<img class="port_info_img" id="SmBrd_2" src="img/port_info/SmBrd_2.png">
     				<p>In my second semester, I designed and built a program that would take an image of a hand drawn circuit diagram and render it neatly and professionally for use in a lab report or presentation.</p>
 
     				<p>My group chose this project after realizing that we could essentially automate the conversions we, as students, were doing, using services like Fritzing or LT Spice, to make hand-drawn circuit diagrams appropriate for our lab reports and presentations.</p>
-    				<img id="SmBrd_3" src="img/port_info/SmBrd_3.png">
+    				<img class="port_info_img" id="SmBrd_3" src="img/port_info/SmBrd_3.png">
     				<p>Above is the general pipeline we designed for our service. Our program took the input image in and converted it to black and white, and then to a matrix. We found the central lines of the diagram by looking at where the average darkness was greatest in the rows and columns of the matrix and cropped around segments of the diagram by finding intersections between these central lines.</p>
     				<p>Having isolated each segment, we searched each image for components by looking for any instance of non-white space above and below the central line of each segment. Once we found these instances, we were able to crop to the components within the segment by making an assumption above the maximum distance between each instance. We passed these into a machine learning classifier.</p>
-    				<img id="SmBrd_4" src="img/port_info/SmBrd_4.png">
+    				<img class="port_info_img" id="SmBrd_4" src="img/port_info/SmBrd_4.png">
     				<p>Using 526 images of hand-drawn resistors and capacitors, in addition to a slanted Gabor filter, our machine learning classifier was able to identify components as either a resistor or a capacitor. Once we identified which components were in each segment, we drew each segment and reassembled the drawing, now appropriate for a lab report or presentation.</p>
     				<p>For more information about our work, please check out our <a href="https://github.com/dinopants174/SmarterBoard" target="_blank">GitHub repository</a>.</p>
 				</div>
@@ -78,17 +78,50 @@
     					<li><img class="exp_logo" src="img/rpi_logo.png"></li>
     					<li><img class="exp_logo" src="img/ard_logo.png"></li>
     				</ul>
- 					<img id="TS_1" src="img/port_info/Team_Sailing_1.jpg">
+ 					<img class="port_info_img" id="TS_1" src="img/port_info/Team_Sailing_1.jpg">
  					<p>In the summer of 2014, I worked on Olin's campus as part of the Team Sailing Research team, with Research Scientist Alex Morrow. Our goal was to begin prototyping a system that would increase the autonomy of blind sailors on sailboats. By the end of the summer, we had succeeded in building a platform that took a blind sailor's input in the form of a key-press on a standard 12 button keypad. Each key-press corresponded to a certain piece of information that a Raspberry Pi computer would say aloud to the blind sailor.</p>
- 					<img id="TS_2" src="img/port_info/TS_2_v2.png">
+ 					<img class="port_info_img" id="TS_2" src="img/port_info/TS_2_v2.png">
  					<p>Above are two schematics detailing the current interactions of blind sailors and the way our system works in this context. Currently, two blind sailors sail with two sighted guides. The guides are using their vision to relay information to the blind sailors. Our system performs the same action but eliminates the middleman in the current system. The blind sailor only gets the information they requested from each key-press.</p>
- 					<img id="TS_3" src="img/port_info/TS_3.png">
+ 					<img class="port_info_img" id="TS_3" src="img/port_info/TS_3.png">
  					<p>The key-presses on our 12 button keypad were read and interpreted by an Arduino Uno, a microprocesser we used due to its easy prototyping capabilities and affordability. Once the Arduino Uno understood which key had been pressed, it communicated that over radio to a credit-card sized computer, the Raspberry Pi.</p>
  					<p>The Raspbeery Pi is constantly gathering data and, when it understands which key has been pressed, it performs a text-to-speech conversion. It reads the text file of whatever information that key corresponds to, converts it to an audio file, and recites the information aloud to the blind sailor.</p>
  					<p>For more information about this ongoing project, please contact <a href="http://www.olin.edu/faculty/profile/alexander-morrow/" target="_blank">Alex Morrow</a>.</p>
  				</div>
- 				<img class="portfolio_images" src="img/portfolio/im_2.png">
- 				<img class="portfolio_images" src="img/portfolio/im_9.png">
+ 				<a onclick="f_in(im_3_info)">
+ 					<img class="portfolio_images" src="img/portfolio/im_2.png">
+ 				</a>
+ 				<div class="im_info" id="im_3_info">
+ 					<h2 class="title">Python Oscar Predictor</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/py_logo.png"></li>
+ 					</ul>
+ 					<img class="port_info_img" id="POP_1" src="img/port_info/pop_1.png">
+ 					<p>As part of a homework assignment second semester, I was tasked with gathering text from the web and using computation to perform some kind of linguistic analysis. I chose to work on an Oscar Predictor, which successfully predicted the Oscars in four categories approximately 5 hours before the actual awards show.</p>
+ 					<p>My partner and I gathered tweets under the hashtag #OscarPrediction2014 and sorted the tweets based on which actors, directors, actresses, and movies were mentioned in the body of the tweet. We performed sentiment analysis on each tweet and averaged the data. We produced the likelihood of positive or negative tweets that predicted who would win the Oscars in the categories of Best Actor, Best Film, Best Actress, and Best Director.</p>
+ 					<p>For Best Actor, we predicted Matthew McConaughey would win.</p>
+ 					<img class="port_info_img" id="POP_2" src="img/port_info/pop_2.png">
+ 					<p>For Best Film, we predicted 12 Years a Slave would win.</p>
+ 					<img class="port_info_img" id="POP_3" src="img/port_info/pop_3.png">
+ 					<p>For Best Actress, we predicted Cate Blanchett would win.</p>
+ 					<img class="port_info_img" id="POP_4" src="img/port_info/pop_4.png">
+ 					<p>For Best Director, we predicted Alfonso Cuaron would win.</p>
+ 					<p>For more information about this project, please check out our <a href="https://github.com/yunhsincynthiachen/Software-Design-Linguistics-Project" target="_blank">GitHub repository</a>.</p>
+ 				</div>
+ 				<a onclick="f_in(im_4_info)">
+ 					<img class="portfolio_images" src="img/portfolio/im_9.png">
+ 				</a>
+ 				<div class="im_info" id="im_4_info">
+ 					<h2 class="title">Optimizing Edge Detection</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
+ 					</ul>
+ 					<p>In my Linear Algebra and Differential Equations course, I used a combined Gaussian filter and Sobel operator to optimize finding edges in an image. Edge detection is used in the real world as an instrumental part of computer vision, machine vision, and image processing. My team used edge detection to cleanly identify faces and facial features.</p>
+ 					<img class="port_info_img" id="LA_1" src="img/port_info/LA_1.png">
+ 					<p>Starting with the above image of Audrey Hepburn, we applied the Sobel operator to the unchanged image itself. The resulting image, shown below, was particularly noisy, picking up on subtle changes in the pixels' brightness. Applying the Gaussian filter beforehand, as we learned in this project, smoothed out the pixels. Then using Sobel, we found we could quickly and efficiently get an accurate rendering of the edges and features of Audrey Hepburn's face.</p>
+ 					<img class="port_info_img" id="LA_2" src="img/port_info/LA_2.png">
+ 					<p>For more information about the mathematics, please check out our <a href="https://docs.google.com/presentation/d/1PdVAlRS5dY1hPeY5tSgWeNMmeAvR-spfEMYwX8h1g5o/edit?usp=sharing" target="_blank">project presentation</a>.</p>
+ 				</div>
+
  				<img class="portfolio_images" src="img/portfolio/im_4.png">
  				<img class="portfolio_images" src="img/portfolio/im_7.png">
  				<img class="portfolio_images" src="img/portfolio/im_5.png">
