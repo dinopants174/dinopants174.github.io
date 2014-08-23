@@ -196,7 +196,7 @@ html, body{
 	width:100%;
 	background-color: #161616;
 	height:575px;
-	margin-top:-30px;
+	margin-top:40px;
 }
 
 #AM_bg a{
@@ -221,14 +221,16 @@ html, body{
 	width:340px;
 	height:auto;
 	margin-top: 75px;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 #AM_content{
 	color:white;
 	font-family: "Agency FB", "Rockwell";
 	margin-left: 390px;
-	margin-top: -450px;
+	/*margin-top: -450px;*/
+	margin-top: -45%;
 	font-size: 1.5em;
 	padding:5px;
+	position: static;
 }
