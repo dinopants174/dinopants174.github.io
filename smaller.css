@@ -110,4 +110,14 @@
 		margin-top: 0%;
 		margin-left: 2%;
 	}
+
+	#contact_title{
+		width:18%;
+		height:5.5%;
+		margin-left: 80%;
+	}
+
+	#contact_info{
+		margin-left: 1%;
+	}
 }
