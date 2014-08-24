@@ -12,7 +12,8 @@
 	}
 
 	#SMIcons{
-		margin-top: -9%;
+		margin-top: -10%;
+		margin-left: 5%;
 	}
 
 	.im_info{
@@ -20,15 +21,21 @@
 	}
 
 	#Self{
-		width:100%;
+		width:90%;
 		height:auto;
 	}
 
 	#ABOUTME{
 		width:40%;
+		height:30px;
 	}
 
 	#CONTACT{
 		height:30px;
+	}
+
+	#contact_info{
+		width:95%;
+		margin-left: 2.5%;
 	}
 }
