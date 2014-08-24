@@ -8,12 +8,12 @@
 	}
 
 	.portfolio_images{
-		margin-left: 15%;
+		margin-left: 12.5%;
 	}
 
 	#SMIcons{
 		margin-top: -10%;
-		margin-left: 5%;
+		margin-left: 1%;
 	}
 
 	.im_info{
@@ -37,5 +37,20 @@
 	#contact_info{
 		width:95%;
 		margin-left: 2.5%;
+		margin-top: 0px;
+	}
+
+	#SMIcons2{
+		margin-left: 10%;
+	}
+
+	#SMIcons2 img{
+		height:5%;
+		width:5%;
+	}
+
+	#cust_mail2{
+		height:5%;
+		width:10%;
 	}
 }
