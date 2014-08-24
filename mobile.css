@@ -45,7 +45,17 @@
 	}
 
 	#SMIcons2{
-		margin-left: -5%;
+		margin-left: -10%;
+	}
+
+	.SM_im{
+		width:5%;
+		height:5%;
+	}
+
+	#cust_mail{
+		width:10%;
+		height:5%;
 	}
 
 }
