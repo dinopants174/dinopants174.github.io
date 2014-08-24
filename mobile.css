@@ -1,0 +1,21 @@
+@media screen and (max-width: 320px){
+	html, body{
+		font-family: Arial;
+	}
+
+	#PORTFOLIO{
+		width:40%;
+	}
+
+	.portfolio_images{
+		margin-left: 10%;
+	}
+
+	#SMIcons{
+		margin-top: -9%;
+	}
+
+	.im_info{
+		margin-top: -400px;
+	}
+}
