@@ -1,0 +1,32 @@
+@media screen and (max-width: 500px){
+	#PORTFOLIO{
+		width:35%;
+	}
+
+	.portfolio_images{
+		margin-left: 20%;
+	}
+
+	.im_info{
+		margin-top: -390px;
+		margin-left: -3.2%;
+	}
+
+	#ABOUTME{
+		width:35%;
+	}
+
+	#Self{
+		margin-left: 3%;
+	}
+
+	#CONTACT{
+		width:35%;
+		margin-left: 60%;
+		margin-top: 20px;
+	}
+
+	#fade{
+		height:5250px
+	}
+}

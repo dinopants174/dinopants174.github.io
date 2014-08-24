@@ -1,0 +1,41 @@
+@media screen and (max-width: 700px){
+	
+	#NavBar_Bottom{
+		display:none;
+	}
+
+	#NavBar_Top{
+		display: none;
+	}
+
+	#PORTFOLIO{
+		width:27.5%;
+	}
+
+	#ABOUTME{
+		width:27.5%;
+	}
+
+	#CONTACT{
+		width:27.5%;
+		margin-left: 70%;
+	}
+
+	.im_info{
+		margin-top: -320px;
+	}
+
+	#fade{
+		height:3950px;
+	}
+
+	#Self{
+		margin-left: 15%;
+	}
+
+	#bottom_bar{
+		padding-top: 150px;
+	}
+
+
+}

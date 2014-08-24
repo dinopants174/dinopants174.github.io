@@ -259,10 +259,10 @@ html, body{
 
 #CONTACT{
 	position: absolute;
-	height:40px;
+	height:50px;
 	width:150px;
 	margin-left:800px;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 
 #contact_info{
