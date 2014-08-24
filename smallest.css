@@ -1,6 +1,7 @@
 @media screen and (max-width: 500px){
 	#PORTFOLIO{
 		width:35%;
+		margin-left: 35%;
 	}
 
 	.portfolio_images{
