@@ -27,11 +27,11 @@
 
 	#ABOUTME{
 		width:40%;
-		height:45px;
+		height:40px;
 	}
 
 	#CONTACT{
-		height:45px;
+		height:40px;
 	}
 
 	#contact_info{
@@ -41,7 +41,7 @@
 	}
 
 	#SMIcons{
-		margin-left: -20%;
+		margin-left: -10%;
 	}
 
 }
