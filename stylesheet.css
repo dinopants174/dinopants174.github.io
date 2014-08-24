@@ -52,7 +52,7 @@ html, body{
 	list-style-type: none;
 	height:auto;
 	margin:0px;
-	margin-left: -45px;
+	/*margin-left: -45px;*/
 	margin-top:8px;
 	font-size:1em;
 	font-family: "Rockwell";
@@ -63,7 +63,7 @@ html, body{
 
 #NavBar_Top li{
 	display:inline;
-	padding:50px;
+	padding:40px;
 	z-index: 2
 }
 
@@ -257,7 +257,7 @@ html, body{
 	height:auto;
 }
 
-#contact_title{
+#CONTACT{
 	position: absolute;
 	height:40px;
 	width:150px;
@@ -286,8 +286,6 @@ html, body{
 #SMIcons2{
 	list-style-type: none;
 	margin:0px;
-/*	margin-top: -70px;
-	margin-left: -20px;*/
 }
 
 #SMIcons2 li{

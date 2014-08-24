@@ -3,6 +3,10 @@
 		width:100%;
 	}
 
+	#fade{
+		height:3550px;
+	}
+
 	#NavBar_Bottom{
 		height:2.5em;
 		width:100%;
@@ -13,7 +17,7 @@
 	}
 
 	#NavBar_Top li{
-		padding:4%;
+		padding:3%;
 		text-align: center;
 	}
 
@@ -111,7 +115,7 @@
 		margin-left: 2%;
 	}
 
-	#contact_title{
+	#CONTACT{
 		width:18%;
 		height:5.5%;
 		margin-left: 80%;

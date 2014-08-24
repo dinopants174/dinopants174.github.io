@@ -1,0 +1,40 @@
+@media screen and (max-width: 800px){
+	#NavBar_Top li{
+		padding:2.5%;
+	}
+
+	#SMIcons{
+		margin-top: -7.5%;
+	}
+
+	#PORTFOLIO{
+		width:20%;
+	}
+
+	.im_info{
+		margin-top: -225px;
+	}
+
+	#ExpIcons{
+		margin-top: -10px;
+		margin-left: -10%;
+	}
+
+	#ABOUTME{
+		width:20%;
+	}
+
+	#CONTACT{
+		width:20%;
+		margin-left: 75%;
+	}
+
+	#fade{
+		height:3925px;
+	}
+
+	#bottom_bar{
+		height:250px;
+		padding-top: 125px;
+	}
+}
