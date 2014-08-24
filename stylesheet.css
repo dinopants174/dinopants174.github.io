@@ -7,7 +7,7 @@ html, body{
 
 #fade{
 	width:100%;
-	height:3000px;
+	height:3500px;
 	display:none;
 	background-color: black;
 	-moz-opacity:0.8;
@@ -52,9 +52,10 @@ html, body{
 	list-style-type: none;
 	height:auto;
 	margin:0px;
+	margin-left: -45px;
 	margin-top:8px;
 	font-size:1em;
-	font-family: "Agency FB", "Rockwell";
+	font-family: "Rockwell";
 	font-weight: bolder;
 	opacity:1;
 	z-index: 2;
@@ -112,7 +113,7 @@ html, body{
 
 #PORTFOLIO{
 	margin-left:400px;
-	margin-top:15px;
+	margin-top:30px;
 	height:60px;
 	width:167px;
 	position:absolute;
@@ -123,12 +124,19 @@ html, body{
 	height:100px;
 }
 
+#PORT_anchor{
+	width:100%;
+	height:1px;
+	margin-top: 25px;
+}
+
 .portfolio_images{
 	display: inline-block;
 	width:240px;
 	height:240px;
 	position:relative;
 	margin:0px;
+	margin-top:10px;
 	padding:0px;
 }
 
@@ -136,7 +144,7 @@ html, body{
 	display:none;
 	position: absolute;
 	left: 24%;
-	top: 700px;
+	top: 750px;
 	padding:25px;
 	padding-top: 0px;
 	background-color: #FFFFFF;
@@ -170,7 +178,7 @@ html, body{
 	list-style-type: none;
 	margin:0px;
 	margin-top: -50px;
-	margin-left: 65%;
+	margin-left:65%;
 }
 
 #ExpIcons li{
@@ -193,6 +201,8 @@ html, body{
 }
 
 #AM_bg{
+	margin:0px;
+	padding:0px;
 	width:100%;
 	background-color: #161616;
 	height:575px;
@@ -205,8 +215,7 @@ html, body{
 }
 
 #AM_bg a:hover{
-	color:#00b1ff;
-	/*opacity: 0.8;*/
+	color:#4d97e0;
 }
 
 #ABOUTME{
@@ -226,11 +235,17 @@ html, body{
 
 #AM_content{
 	color:white;
-	font-family: "Agency FB", "Rockwell";
+	/*font-family: "Agency FB", "Rockwell";*/
+	font-family: "Rockwell";
 	margin-left: 390px;
-	/*margin-top: -450px;*/
-	margin-top: -45%;
+	margin-top: -520px;
 	font-size: 1.5em;
-	padding:5px;
+	padding:20px;
 	position: static;
+}
+
+#contact_bg{
+	width:100%;
+	background-color: #E0E0E0;
+	height:auto;
 }
