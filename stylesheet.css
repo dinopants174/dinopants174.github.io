@@ -131,13 +131,32 @@ html, body{
 }
 
 .portfolio_images{
-	display: inline-block;
 	width:240px;
 	height:240px;
 	position:relative;
 	margin:0px;
 	margin-top:10px;
 	padding:0px;
+}
+
+.portfolio_images_bar{
+	width:200px;
+	height:5px;
+	background-color: #006AD3;
+	position: relative;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 2%;
+	font-family: "Rockwell";
+}
+
+.portfolio_images_title{
+	font-family: "Rockwell";
+	margin-left: 3.5%;
+}
+
+.disp_all{
+	display:inline-block;
 }
 
 .im_info{
@@ -166,8 +185,8 @@ html, body{
 	width:500px;
 }
 
-#port_bg a:hover{
-	opacity:0.7;
+.disp_all:hover{
+	opacity: 0.7;
 }
 
 .im_info a{
