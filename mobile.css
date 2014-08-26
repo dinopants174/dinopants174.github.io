@@ -24,6 +24,7 @@
 	#Self{
 		width:90%;
 		height:auto;
+		margin-left: 2%;
 	}
 
 	#ABOUTME{
@@ -52,7 +53,7 @@
 
 	#cust_mail{
 		width:7%;
-		height:3%;
+		height:2.5%;
 	}
 
 }
