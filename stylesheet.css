@@ -152,6 +152,7 @@ html, body{
 .portfolio_images_title{
 	font-family: "Oswald";
 	margin-left: 3.5%;
+	color:black;
 }
 
 .disp_all{
@@ -182,6 +183,14 @@ html, body{
 	display: block;
 	margin:auto;
 	width:500px;
+}
+
+.disp_all a{
+	text-decoration: none;
+}
+
+.disp_all a:visited{
+	text-decoration: none;
 }
 
 .disp_all:hover{
