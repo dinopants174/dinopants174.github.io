@@ -76,7 +76,7 @@
     				<p>My group chose this project after realizing that we could essentially automate the conversions we, as students, were doing, using services like Fritzing or LT Spice, to make hand-drawn circuit diagrams appropriate for our lab reports and presentations.</p>
     				<img class="port_info_img" id="SmBrd_3" src="img/port_info/SmBrd_3.png">
     				<p>Above is the general pipeline we designed for our service. Our program took the input image in and converted it to black and white, and then to a matrix. We found the central lines of the diagram by looking at where the average darkness was greatest in the rows and columns of the matrix and cropped around segments of the diagram by finding intersections between these central lines.</p>
-    				<p>Having isolated each segment, we searched each image for components by looking for any instance of non-white space above and below the central line of each segment. Once we found these instances, we were able to crop to the components within the segment by making an assumption above the maximum distance between each instance. We passed these into a machine learning classifier.</p>
+    				<p>Having isolated each segment, we searched each image for components by looking for any instance of non-white space above and below the central line of each segment. Once we found these instances, we were able to crop to the components within the segment by making an assumption above the maximum distance between each component. We passed these into a machine learning classifier.</p>
     				<img class="port_info_img" id="SmBrd_4" src="img/port_info/SmBrd_4.png">
     				<p>Using 526 images of hand-drawn resistors and capacitors, in addition to a slanted Gabor filter, our machine learning classifier was able to identify components as either a resistor or a capacitor. Once we identified which components were in each segment, we drew each segment and reassembled the drawing, now appropriate for a lab report or presentation.</p>
     				<p>For more information about our work, please check out our <a href="https://github.com/dinopants174/SmarterBoard" target="_blank">GitHub repository</a>.</p>
@@ -153,45 +153,152 @@
  				</div>
 
  				<div class="disp_all">
- 						<img class="portfolio_images" src="img/portfolio/im_4.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Equal Colors</h2></div>
+ 						<a onclick="f_in(im_5_info)" href="#PORT_anchor">
+ 							<img class="portfolio_images" src="img/portfolio/im_4.png">
+ 							<div class="portfolio_images_bar"></div>
+ 							<div class="portfolio_images_title"><h2>Equal Colors</h2></div>
+ 						</a>
+ 				</div>
+ 				<div class="im_info" id="im_5_info">
+ 					<h2 class="title">Equal Colors</h2>
+ 					<ul id="ExpIcons">
+ 						<li></li>
+ 					</ul>
+ 					<img class="port_info_img" id="EQ_1" src="img/port_info/EQ_1.png">
+ 					<p>As part of my Arts, Humanities, and Social Sciences Foundation course at Olin, I utilized principles of cyber-activism to advocate for racial equality in America. I designed and built a website, called Equal Colors, to make race a topic we can discuss. The goal of Equal Colors is to create a safe and open forum for a critical discussion on race and connect people of all different cultural and racial backgrounds.</p>
+ 					<p>I placed a brief timeline of racial issues in America on my home page. I created a page entirely related to racial stereotypes and analyzed the shooting of Trayvon Martin through the lens of racial conditioning. On another page, I listed a variety of race statistics and targeted the inherent problems behind color-blind racism. I had a dedicated forum page to a variety of topics I had posed. All of these pages were geared towards eliciting some form of reaction and discussion from the viewer.</p>
+ 					<img class="port_info_img" id="EQ_2" src="img/port_info/EQ_2.png">
+ 					<p>Above was one method I employed to remove the taboo and stigma of race and make it an easier topic to broach. My friends and I took a bunch of selfies and then I, using Photoshop, overlayed a color over all of their exposed skin. The images were designed to help the viewer realize that race makes up one color. It can be as vairable as purple, blue, or yellow. It is an important part of a person's ethnic identity and has had a huge impact on America's history but it is also just a color. And you can discuss the way a color impacts a person's experience in this country.</p>
+ 					<p>To check out the site and learn more about my cause, please visit <a href="http://zoherghadyali.wix.com/equalcolors" target="_blank">Equal Colors</a>.</p>
  				</div>
  				
  				<div class="disp_all">
+ 					<a onclick="f_in(im_6_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_7.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Biometric Circuits</h2></div>
+ 					</a>
+ 				</div>
+ 				<div class="im_info" id="im_6_info">
+ 					<h2 class="title">Biometric Circuits</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/ee_logo.png"></li>
+ 					</ul>
+ 					<img class="port_info_img" id="RWM_1" src="img/port_info/RWM_1.png">
+ 					<p>Working in a team of five, we built several biometric circuits to record a person's fear response to varying stimuli. Collectively, we recorded galvanic skin responses, breathing rate, blood pressure, and heart rate. </p>
+ 					<img class="port_info_img" id="RWM_2" src="img/port_info/RWM_2.png">
+ 					<p>I built the GSR (Galvanic Skin Response) circuit using the above schematic. This particular circuit works by comparing the resistance along skin against other resistors in a Wheatstone bridge. The general idea is that the more scared the subject is, the sweatier their skin becomes, and the lower the resistance along their skin is, compared to the other resistors in the bridge.</p>
+ 					<p>We began by taking the test subject's resting response. We then monitored the voltages coming out of our circuits while exposing the test subject to horrific videos and playthroughs of scary videogames. Specifically, we wanted to measure the effect of audio in terms of fear response. In our third trial, we exposed the test subject to scary videos but muted the volume. Instead, the subject listened to calming and relaxing music.</p>
+ 					<p>After looking at our data, we concluded that audio had significant impacts on the fear response. The absence of scary audio and the presence of relaxing music greatly decreased our measured fear response. The horror videogame industry definitely needs to compensate their audio departments for contributing heavily to the fear response and game immersion of their players.</p>
  				</div>
 
  				<div class="disp_all">
+ 					<a onclick="f_in(im_7_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_5.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Robotic Sailing</h2></div>
+ 					</a>
+ 				</div>
+ 				<div class="im_info" id="im_7_info">
+ 					<h2 class="title">Olin Robotic Sailing</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/ard_logo.png"></li>
+ 						<li><img class="exp_logo" src="img/ee_logo.png"></li>
+ 						<li><img class="exp_logo" src="img/myRIO_logo.png"></li>
+
+ 					</ul>
+ 					<img class="port_info_img" id="ORS_1" src="img/port_info/ORS_1.jpg">
+ 					<p>I joined the Olin Robotic Sailing Team in the first semester of my freshmen year. I spent the year on the electrical team, working on redesigning our system. Our electrical system was centered around a myRIO, due to the amount of I/O it gave us for all of our instrumentation. In addition, the myRIO allowed us to prototype rapidly on protoboards and easily separated power and signal.</p>
+ 					<p>In terms of redesigning our system, we had moved from servos to Dynamixels, due to their precision and position control. Dynamixels are also easily identifiable because they only respond to specifically coded packets of data and are, as a result, simple to daisy chain. We also wanted to plan our system better, waterproofing appropriately, and making sure all of our components are properly secured in the boat. We worked on redesigning our PCBs and testing our Dynamixels using an Arduino.</p>
+ 					<img class="port_info_img" id="ORS_2" src="img/port_info/ORS_2.png">
+ 					<img class="port_info_img" id="ORS_3" src="img/port_info/ORS_3.png">
+ 					<p>Above is a signal diagram we drew during the year, categorized by signal type, and a diagram depicting the I/O and communication protocols we had access to with the myRIO. Our goal, as a team, is to accomplish a trans-Atlantic autonomous voyage.</p>
+ 					<p>To hear more about this project and our progress, please check out the <a href="http://olinsailbot.com/" target="_blank">Olin Robotic Sailing page</a>.</p>
  				</div>
 
  				<div class="disp_all">
+ 					<a onclick="f_in(im_8_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_10.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Ping Pong Models</h2></div>
+ 					</a>
+ 				</div>
+ 				<div class="im_info" id="im_8_info">
+ 					<h2 class="title">The Ghost Serve</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
+ 					</ul>
+ 					<img class="port_info_img" id="ME_1" src="img/port_info/ME_1.png">
+ 					<p>As part of a Mechanics class second semester, I worked with a partner to model a ghost serve in ping pong. In this type of serve, as shown above, the ball's second bounce on the opponent's side of the table generates enough back spin to actually bounce backwards without going over the net. This type of trick shot essentially guarantees a point to the server if they can successfully execute the serve. We knew that the serve was possible after seeing a friend of ours use the serve in everyday play and through online examples.</p>
+ 					<p>We first had to prove in our model that the serve was possible and then from there, we chose to optimize the serve by varying the initial amount of backspin on the ball. Below are free-body diagrams for the flight and bounce models of our ball, post-serve. As shown in the diagram above, we had three separate flight phases and two bounce phases, with different equations depending on whether we were in flight or bounce.</p>
+ 					<img class="port_info_img" id="ME_2" src="img/port_info/ME_2.png">
+ 					<p>Varying initial horizontal velocity and rotational velocity, we produced the punchline graph below where we isolated the region in which a legal ghost serve is successfully completed.</p>
+ 					<img class="port_info_img" id="ME_3" src="img/port_info/ME_3.jpg">
+ 					<p>After selecting an initial horizontal velocity of 6 m/s that produced a legal serve no matter how much backspin was placed on the ball, we varied initial backspin to optimize the ghost serve. We wanted to know how much backspin you would have to put on the ball to travel the greatest horizontal velocity backwards after the second bounce. Below is our optimization graph, where the greatest negative distance is our optimized ghost serve.
+ 					<img class="port_info_img" id="ME_4" src="img/port_info/ME_4.jpg">
+ 					<p>For more information about our model, please check out our <a href="https://www.dropbox.com/s/wx9gu4nw5b8o4es/Ping_Pong_Paper.pdf?dl=0" target="_blank">paper</a>.</p>
  				</div>
 
+
  				<div class="disp_all">
+ 					<a onclick="f_in(im_9_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_8.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Sound Locks</h2></div>
+ 					</a>
+ 				</div>
+ 				<div class="im_info" id="im_9_info">
+ 					<h2 class="title">Sound Locks</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/ee_logo.png"></li>
+ 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
+ 					</ul>
+ 					<img class="port_info_img" id="MC_1" src="img/port_info/MC_1.jpg">
+ 					<p>My final project in my first electrical engineering class was to design and build a circuit that would only "unlock" when the correct tone was played. In terms of the circuitry, we defined unlocking with an LED lighting up but we could have amplified the output voltage and actually moved a servo.</p>
+ 					<p>As shown in the above diagram, we took the input signal and put it through a first-order bandpass filter to center in on as narrow a range of frequencies as we could using this filter. We then placed the filtered signal through a rectifier to convert our AC signal to DC. We amplified our signal at this point and fed it through an integrator so that the right range of frequencies needed to be sustained for a period of time before the circuit would unlock.</p>
+ 					<p>For more information about this project, read our <a href="https://www.dropbox.com/s/9zd181uqwdrpdvx/ModCon_Final_Project_Report.pdf?dl=0" target="_blank">report</a> or check out this educational <a href="https://www.youtube.com/watch?v=_8q1zZQptIY" target="_blank">video</a> and advertisement we made for our product.</p>
  				</div>
 
  				<div class="disp_all">
+ 					<a onclick="f_in(im_10_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_6.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Pharmacokinetics</h2></div>
+ 					</a>
+ 				</div>
+ 				<div class="im_info" id="im_10_info">
+ 					<h2 class="title">Pharmacokinetics</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
+ 					</ul>
+ 					<img class="port_info_img" id="MS_1" src="img/port_info/MS_1.png">
+ 					<p>Working with a partner, I built a model that analyzed the pharmacokinetics of the drug Gemcitabine, which is a commonly used chemotherapy drug for pancreatic cancer. In analyzing the pharmacokinetics, we wanted to understand how the drug moves through the body and where it ends up. Injected intravenously, as shown in the models above, some of the drug is lost in urine while some of it makes it to both healthy neutrophils and cancer cells. In our model, we created dead cell counters to determine the effectiveness of the drug. We varied percent targeting, i.e. how much of the drug makes it to cancer cells versus healthy cells, and initial dosage.
+ 					<img class="port_info_img" id="MS_2" src="img/port_info/MS_2.png">
+ 					<p>As shown in the above graph, we see that as we increase the initial dosage at low levels of targeting, we kill more healthy cells but as we increase percent targeting, we are killing less and less healthy cells. This allows us to administer higher initial doses of the drug. This graph shows us that the model makes sense and is behaving in the way we expect, as does the graph below.</p>
+ 					<img class="port_info_img" id="MS_3" src="img/port_info/MS_3.png">
+ 					<p>Similarly, this graph shows that as percent targeting and initial dosage increase, we kill more and more cancer cells and enter our success case, in which we kill cancer cells faster than they grow. Below is our punchline figure.</p>
+ 					<img class="port_info_img" id="MS_4" src="img/port_info/MS_4.png">
+ 					<p>Combining the above two graphs, we created our punchline figure in which we separate the behavior of the drug into 4 categories: not effective, killing too many healthy cells and posing a risk to the patient, successfully killing cancer cells, and wasting the drug. What we discovered is that as we increase percent targeting, we can exponentially increase initial dosage to maximize effectiveness.</p>
+ 					<p>For more information about this project, please check out our <a href="https://www.dropbox.com/s/xotxd369xz1xips/ModSim_P2_Poster.pdf?dl=0" target="_blank">final poster</a>.</p>
+
  				</div>
 
  				<div class="disp_all">
+ 					<a onclick="f_in(im_11_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_11.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Squirrel Design</h2></div>
+ 					</a>
+ 				</div>
+ 				<div class="im_info" id="im_11_info">
+ 					<h2 class="title">Sneaky &amp Squeaky Squirrel</h2>
+ 					<ul id="ExpIcons">
+ 						<li><img class="exp_logo" src="img/mech_logo.png"></li>
+ 					</ul>
+ 					<img class="port_info_img" id="DN_1" src="img/port_info/DN_1.jpg">
+ 					<p>The story: Sneaky Squirrel and Squeaky Squirrel are gathering food for the approaching winter. Sneaky Squirrel runs along the top of the tree and knocks acorns down with its tail to Squeaky Squirrel, waiting on the forest floor. However, the tree is full of holes and obstacles so Sneaky and Squeaky Squirrel need your help to gather the acorns. You have 30 seconds to build a path from Sneaky to Squeaky.</p>
+ 					<p>Working in a team of 5, we had to design a game for 4th graders centering around a specific motion of an animal of our choosing. My team worked with the bounding motion of a squirrel. We assembled a puzzle where our squirrel, which we called Sneaky Squirrel, would bound along at the top of a ramp and knock an acorn down with its tail. The players would know which acorn was being knocked down and had 30 seconds to build a path from Sneaky Squirrel, at the top, to Squeaky Squirrel, who waited at the bottom to catch the acorn. The players were free to move Squeaky Squirrel along the bottom of the ramp and, using path pieces we had previously assembled, were free to place them anywhere along the ramp.</p>
+ 					<p>Our goal was to get a group of 4th graders working together to solve the puzzle but we found more success when a single child played the game. They could think more cohesively and assemble the path themselves, instead of the chaos of 5 or 6 kids constantly moving path pieces.</p>
  				</div>
  				
  				<div id="AM_anchor"></div>

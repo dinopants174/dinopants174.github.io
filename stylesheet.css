@@ -202,6 +202,10 @@ html, body{
 	color:#006AD3;
 }
 
+.im_info a:hover{
+	opacity:0.7;
+}
+
 #ExpIcons{
 	list-style-type: none;
 	margin:0px;
@@ -226,6 +230,18 @@ html, body{
 
 #POP_4{
 	width:400px;
+}
+
+#EQ_1{
+	margin-top:2%;
+}
+
+#ME_1{
+	margin-top: 1%;
+}
+
+#MS_2{
+	margin-top: 1.5%;
 }
 
 #AM_bg{
