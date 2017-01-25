@@ -42,7 +42,7 @@
 				<li><a href="#CONTACT_anchor">contact</a></li>
 			</ul>
 
-			<img id="Cover_Image" src="img/cover_im_2.png">
+			<img id="Cover_Image" src="img/cover_im.png">
 
 			<ul id="SMIcons">
 				<li><a href="mailto:zoher.ghadyali@students.olin.edu" target="_top"><img id="cust_mail" class="SM_im" src="img/sm_mail.png"></a></li>
@@ -56,47 +56,127 @@
 				<div id="PORT_anchor"></div>
 				<img id="PORTFOLIO" src="img/portfolio_title.png">
 				<div id="Blank_1"></div>
+
 				<div class="disp_all">
- 					<a onclick="f_in(im_1_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_1.png">
+					<a onclick="f_in(im_9_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_9.png">
  						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>SmarterBoard</h2></div>
+ 						<div class="portfolio_images_title"><h2>DPLL</h2></div>
  					</a>
  				</div>
- 				
-				<div class="im_info" id="im_1_info">
-    				<h2 class="title">SmarterBoard</h2>
-    				<ul id="ExpIcons">
-    					<li><img class="exp_logo" src="img/py_logo.png"></li>
-    				</ul>
-    				<img class="port_info_img" id="SmBrd_1" src="img/port_info/SmBrd_1.png">
-    				<img class="port_info_img" id="SmBrd_2" src="img/port_info/SmBrd_2.png">
-    				<p>In my second semester, I designed and built a program that would take an image of a hand drawn circuit diagram and render it neatly and professionally for use in a lab report or presentation.</p>
 
-    				<p>My group chose this project after realizing that we could essentially automate the conversions we, as students, were doing, using services like Fritzing or LT Spice, to make hand-drawn circuit diagrams appropriate for our lab reports and presentations.</p>
-    				<img class="port_info_img" id="SmBrd_3" src="img/port_info/SmBrd_3.png">
-    				<p>Above is the general pipeline we designed for our service. Our program took the input image in and converted it to black and white, and then to a matrix. We found the central lines of the diagram by looking at where the average darkness was greatest in the rows and columns of the matrix and cropped around segments of the diagram by finding intersections between these central lines.</p>
-    				<p>Having isolated each segment, we searched each image for components by looking for any instance of non-white space above and below the central line of each segment. Once we found these instances, we were able to crop to the components within the segment by making an assumption above the maximum distance between each component. We passed these into a machine learning classifier.</p>
-    				<img class="port_info_img" id="SmBrd_4" src="img/port_info/SmBrd_4.png">
-    				<p>Using 526 images of hand-drawn resistors and capacitors, in addition to a slanted Gabor filter, our machine learning classifier was able to identify components as either a resistor or a capacitor. Once we identified which components were in each segment, we drew each segment and reassembled the drawing, now appropriate for a lab report or presentation.</p>
-    				<p>For more information about our work, please check out our <a href="https://github.com/dinopants174/SmarterBoard" target="_blank">GitHub repository</a>.</p>
-				</div>
+ 				<div class="im_info" id="im_9_info">
+ 					<h2 class="title">Digital Phase Locked Loop (DPLL)</h2>
+					<img class="port_info_img" id="vlsi1" src="img/port_info/vlsi_1.png"> 				
+ 					<p>For my final project in my Mixed Analog-Digital VLSI, I designed a digital phase locked loop IC using MOSFETs and a passive RC filter. This circuit can be used in a wireless communication system to ensure that the received data is clocked at the same rate as the transmitter's clock or can be used as a frequency synthesizer. The above image is the entire circuit, which consists of a phase frequency detector (PFD), a charge pump, a loop filter, a voltage-controlled oscillator (VCO), and a divide-by-n counter in a negative feedback loop, built in LT Spice. We simulated this circuit, synthesizing output clock signals in the range of a couple hundred kHz to 200 MHz. We then laid out the circuit in Glade, a free IC editor, shown below.</p>
+ 					<img class="port_info_img" id="vlsi1" src="img/port_info/vlsi_2.png">
+ 					<p>We sent out this design for fabrication from MOSIS and will be receving and testing our IC sometime in February 2017. If you want to see our designs, please visit our <a href="https://drive.google.com/drive/folders/0B_Q3hhXtwk7JRV9RdXMtT0UwaUE?usp=sharing" target="_blank">project library</a>.</p>
+ 				</div>
+
 
 				<div class="disp_all">
-					<a onclick="f_in(im_2_info)" href="#PORT_anchor">
+					<a onclick="f_in(im_8_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_8.png">
+ 						<div class="portfolio_images_bar"></div>
+ 						<div class="portfolio_images_title"><h2>We Do</h2></div>
+ 					</a>
+ 				</div>
+
+ 				<div class="im_info" id="im_8_info">
+ 					<h2 class="title">We Do: Your Wedding Planning App</h2>
+ 					<img class="port_info_img" id="wedo1" src="img/port_info/wedo_1.png">
+ 					<p>For my final project in my Human Factors in Design course, I built a web and mobile application for people who plan their own weddings. Users visit our web application and can either join a wedding planning party or create a new one. They then proceed through a configuration process which asks when they plan on getting married and on what days and times are they free to work on planning their wedding. Using this data, we create a schedule for the user and notify them with tasks to complete during the days and times they indicated.</p>
+ 					<img class="port_info_img" id="wedo1" src="img/port_info/wedo_2.png">
+ 					<p>In talking to people who were in the process of planning their own wedding or people who had just recently planned their wedding, we noticed that a vast majority of our user group did much of their organization on Excel or Google Sheets. In looking at other competitors in this space, we found users were presented with hundreds-of-items-long checklists that felt overwhelming and were too rigid and noncustomizable.</p>
+ 					<p>Our solution provides a mobile notification interface for users to see only the tasks they have to do today or the next time that they are free to work on planning their own wedding. Users can now get planning done for their wedding while on the go. In addition, users can perform the same actions on our web interface while also providing higher-level configuration and customization options. For this project, we developed mockups of the mobile and web interfaces and iterated on them in the form of paper prototyping tests, formal usability studies, and heuristic evaluations.</p>
+ 					<p>If you want to learn more about our project or explore our mockups, please visit our <a href="http://hfid.olin.edu/sa2017/ranier/rainierdesign/" target="_blank">website</a>.</p>
+ 				</div>
+
+
+				<div class="disp_all">
+					<a onclick="f_in(im_7_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_7.png">
+ 						<div class="portfolio_images_bar"></div>
+ 						<div class="portfolio_images_title"><h2>Catalyst</h2></div>
+ 					</a>
+ 				</div>
+
+ 				<div class="im_info" id="im_7_info">
+ 					<h2 class="title">Catalyst Web App</h2>
+ 					<img class="port_info_img" id="js1" src="img/port_info/js_1.png">
+ 					<p>For my final project in my Olin.js course, I built a web application for artists to display their work and credit their inspirations. Viewers would then be able to see a single piece of art, a tree of pieces that inspired the creation of this art, and other works that were inspired by this art. I primarily worked in the back-end for this project, developing our user, piece, and board schemas and the routes used to manipulate these objects. We used Node for our server, React for our client-side Javascript, MongoDB as our database, and D3 to render this tree, which is shown below.</p>
+ 					<img class="port_info_img" id="js2" src="img/port_info/js_2.png">
+ 					<p>The design of this web application was heavily influenced by Pinterest, with the idea being something along the lines of "Let's make Pinterest but you can show off what you made while showing what inspired you to make it in the first place". Users log in with Facebook and see a feed of all pieces uploaded to the site. Users can visualize the trees of inspired pieces and inspiration pieces, add pieces to their own boards, and upload their own work and credit pieces from their boards as inpsirations. A user's board is shown below.</p>
+ 					<img class="port_info_img" id="js3" src="img/port_info/js_3.png">
+ 					<p>If you want to check out Catalyst for yourself, please visit <a href="https://olinjscatalyst.herokuapp.com/" target="_blank">our application</a>. Our GitHub repository can be found <a href="https://github.com/dinopants174/olinjsCatalyst" target="_blank">here</a>.</p>
+ 				</div>
+
+				<div class="disp_all">
+					<a onclick="f_in(im_6_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_6.png">
+ 						<div class="portfolio_images_bar"></div>
+ 						<div class="portfolio_images_title"><h2>U.S. Congress Data</h2></div>
+ 					</a>
+ 				</div>
+
+ 				<div class="im_info" id="im_6_info">
+ 					<h2 class="title">Congress Through Time</h2>
+ 					<img class="port_info_img" id="ds1" src="img/port_info/ds_1.png">
+ 					<p>For my final project in my Data Science course, we gathered data on every session of the U.S. Congress from the 1st to the 113th and analyzed it in 4 visuals. We started out by scraping data from <a href="https://www.congress.gov/" target="_blank">Congress.gov</a> and <a href="http://www.senate.gov/" target="_blank">Senate.gov</a> but, after a bit of research, found <a href="https://www.govtrack.us/" target="_blank">GovTrack</a> which is not affiliated with the U.S. government, provides its data for free, and has data from all session of Congress in JSON format.</p>
+ 					<p>The data from <a href="https://www.govtrack.us/" target="_blank">GovTrack</a> came in the form of hundreds of gigs of individual JSON files for every bill, amendment, and vote in Congress. We spent the first half of this project organizing this data into indiviudal .csv files. We produced 226 CSV files, one for each branch of Congress for each of its 113 sessions. The 114th session of Congress was in term at the time of creation of this project, so we chose not to include it for incomplete data. The files are named [session][branch].csv where [session] is the session number, 1-113, and [branch] is the branch of Congress, either "house" or "senate". Additionally, we created a legislators.csv file which contains a row for each legislator and columns of information about them. We made <a href="https://github.com/dinopants174/DataScienceFinalProject/tree/gh-pages" target="_blank">all of our data</a> licensed free and open source under the GNU General Public License and, in the spirit of data journalism, invite visitors to use the data as they see fit.</p>
+ 					<img class="port_info_img" id="ds2" src="img/port_info/ds_2.png">
+ 					<p>Having organized our data, we began creating visualizations using D3.js. The map of the country shows each congressional district and is colored by how long the representative for that district has been an incumbent, attempting to link rising voter apathy with greater incumbency. Due to the mobilization of the Tea Party in the 2010 midterm elections, we were unable to see the effect of reported rising voter apathy in this decade. In the visualization above, the two circles represent the two main parties in Congress for that session. The fill of the circles represents the percentage agreement on votes for that party in that session and the region of overlap indicates how inline the simple-majority average voter of that party is compared to the other party.</p>
+ 					<p>To interact with our data visualizations and learn more about Congress, please check out our <a href="http://zoherghadyali.me/DataScienceFinalProject/index.html" target="_blank">project website</a>.</p>
+
+ 				</div>
+
+				<div class="disp_all">
+					<a onclick="f_in(im_5_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_5.png">
+ 						<div class="portfolio_images_bar"></div>
+ 						<div class="portfolio_images_title"><h2>I2C Computing</h2></div>
+ 					</a>
+ 				</div>
+
+ 				<div class="im_info" id="im_5_info">
+ 					<h2 class="title">Model of Distributed Computing over I2Ck</h2>
+ 					<img class="port_info_img" id="softsys1" src="img/port_info/softsys_1.png">
+ 					<p>As my final project in my Software Systems class, I built a model of distributed computing using 6 Adafruit Trinkets and an Arduino Uno. The Trinkets were all connected to the Uno over I2C. We used the Arduino Uno as our master device and although the Uno packs enough processing power to do these complex computations itself, we sent the Trinkets specific computations and then polled them for the results. In the diagram above, we showed our process for doing a matrix multiplication in this system.</p>
+ 					<img class="port_info_img" id="softsys2" src="img/port_info/softsys_2.png">
+ 					<p>We also implemented the mergesort algorithm by receiving the results of individual sorts on the Uno, aggregating them, and then sending those results back to Trinkets for additional computation. In order to do this, we implemented our own communication protocol on the Trinkets in order to give them variable array sizes that needed to be sorted, as shown in the diagram below.</p>
+ 					<img class="port_info_img" id="softsys3" src="img/port_info/softsys_3.png">
+ 					<p>For more information on this project, please check out our <a href="https://docs.google.com/presentation/d/1g3v7THNdkRSG226gptjpX1R1Rlwh6wg_mVWQ0NW0dsA/edit?usp=sharing" target="_blank">final presentation</a>.</p>
+ 				</div>
+
+				<div class="disp_all">
+					<a onclick="f_in(im_4_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_4.png">
+ 						<div class="portfolio_images_bar"></div>
+ 						<div class="portfolio_images_title"><h2>bLOCK</h2></div>
+ 					</a>
+ 				</div>
+
+ 				<div class="im_info" id="im_4_info">
+ 					<h2 class="title">bLOCK: The Smart Bike Lock</h2>
+ 					<img class="port_info_img" id="block1" src="img/port_info/block_1.jpg">
+ 					<p>My final project in my Principles of Engineering course was bLOCK: The Smart Bike Lock. Using Bluetooth and the bLOCK Android app, users can unlock or lock their bike lock with a push of a button. Using Bluetooth's Received Signal Strength Indicator (RSSI) values as a rough approximation of position, we also sensed when users walked away from their bLOCK and locked it automatically and when they walked towards their bLOCK, it unlocked automatically. On this project, I was the embedded software and electrical engineer.</p>
+ 					<img class="port_info_img" id="block2" src="img/port_info/block_2.png">
+ 					<p>We used an Arduino Micro that was connected to a Bluetooth Low Energy shield, which communicated with the user's Android phone, and a servo motor, which controlled the lock's position. We powered bLOCK using an 3.3V LiPo battery and a boost board that provided rechargeability. On the Arduino Micro, we implemented a security passcode that the phone transmits to the Arduino Micro when they are first paired and is subsequently stored in the Micro's EEPROM. Whenever the Micro is then connected to a device, the phone must transmit the agreed-upon passcode before the user can proceed to lock or unlock the bLOCK.</p>
+ 					<p>In addition, we used averages of RSSI values to smooth out the signal strength between the user's phone and bLOCK to determine the direction the user is moving. We started with a rolling average of RSSI values so each new RSSI value adjusts the average RSSI value slightly. We then look at the difference between the current RSSI average and the previous RSSI average and either locked or unlocked the bLOCK automatically depending whether the user is moving away from or towards their bLOCK.</p>
+ 					<p>For more information about this project, please visit <a href="http://poeblock.github.io/index.html" target="_blank">our project website</a>.</p>
+
+ 				</div>
+
+				<div class="disp_all">
+					<a onclick="f_in(im_3_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_3.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Team Sailing</h2></div>
  					</a>
  				</div>
 
- 				<div class="im_info" id="im_2_info">
+ 				<div class="im_info" id="im_3_info">
  					<h2 class="title">Team Sailing Research</h2>
- 					<ul id="ExpIcons">
-    					<li><img class="exp_logo" src="img/py_logo.png"></li>
-    					<li><img class="exp_logo" src="img/rpi_logo.png"></li>
-    					<li><img class="exp_logo" src="img/ard_logo.png"></li>
-    				</ul>
  					<img class="port_info_img" id="TS_1" src="img/port_info/Team_Sailing_1.jpg">
  					<p>In the summer of 2014, I worked on Olin's campus as part of the Team Sailing Research team, with Research Scientist Alex Morrow. Our goal was to begin prototyping a system that would increase the autonomy of blind sailors on sailboats. By the end of the summer, we had succeeded in building a platform that took a blind sailor's input in the form of a key-press on a standard 12 button keypad. Each key-press corresponded to a certain piece of information that a Raspberry Pi computer would say aloud to the blind sailor.</p>
  					<img class="port_info_img" id="TS_2" src="img/port_info/TS_2_v2.png">
@@ -107,21 +187,42 @@
  					<p>For more information about this ongoing project, please contact <a href="http://www.olin.edu/faculty/profile/alexander-morrow/" target="_blank">Alex Morrow</a>.</p>
  				</div>
 
+
  				<div class="disp_all">
- 					<a onclick="f_in(im_3_info)" href="#PORT_anchor">
+ 					<a onclick="f_in(im_2_info)" href="#PORT_anchor">
  						<img class="portfolio_images" src="img/portfolio/im_2.png">
+ 						<div class="portfolio_images_bar"></div>
+ 						<div class="portfolio_images_title"><h2>SmarterBoard</h2></div>
+ 					</a>
+ 				</div>
+ 				
+				<div class="im_info" id="im_2_info">
+    				<h2 class="title">SmarterBoard</h2>
+    				<img class="port_info_img" id="SmBrd_1" src="img/port_info/SmBrd_1.png">
+    				<img class="port_info_img" id="SmBrd_2" src="img/port_info/SmBrd_2.png">
+    				<p>For my final project in my Software Design course, I designed and built a program in Python that would take an image of a hand drawn circuit diagram and render it neatly and professionally for use in a lab report or presentation.</p>
+    				<p>My group chose this project after realizing that we could essentially automate the conversions we, as students, were doing, using services like Fritzing or LT Spice, to make hand-drawn circuit diagrams appropriate for our lab reports and presentations.</p>
+    				<img class="port_info_img" id="SmBrd_3" src="img/port_info/SmBrd_3.png">
+    				<p>Above is the general pipeline we designed for our service. Our program took the input image in and converted it to black and white, and then to a matrix. We found the central lines of the diagram by looking at where the average darkness was greatest in the rows and columns of the matrix and cropped around segments of the diagram by finding intersections between these central lines.</p>
+    				<p>Having isolated each segment, we searched each image for components by looking for any instance of non-white space above and below the central line of each segment. Once we found these instances, we were able to crop to the components within the segment by making an assumption above the maximum distance between each component. We passed these into a machine learning classifier.</p>
+    				<img class="port_info_img" id="SmBrd_4" src="img/port_info/SmBrd_4.png">
+    				<p>Using 526 images of hand-drawn resistors and capacitors, in addition to a slanted Gabor filter, our machine learning classifier was able to identify components as either a resistor or a capacitor. Once we identified which components were in each segment, we drew each segment and reassembled the drawing, now appropriate for a lab report or presentation.</p>
+    				<p>For more information about our work, please check out our <a href="https://github.com/dinopants174/SmarterBoard" target="_blank">GitHub repository</a>.</p>
+				</div>
+
+				 <div class="disp_all">
+ 					<a onclick="f_in(im_1_info)" href="#PORT_anchor">
+ 						<img class="portfolio_images" src="img/portfolio/im_1.png">
  						<div class="portfolio_images_bar"></div>
  						<div class="portfolio_images_title"><h2>Oscar Predictor</h2></div>
  					</a>
  				</div>
 
- 				<div class="im_info" id="im_3_info">
- 					<h2 class="title">Python Oscar Predictor</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/py_logo.png"></li>
- 					</ul>
+
+ 				<div class="im_info" id="im_1_info">
+ 					<h2 class="title">Oscar Predictor</h2>
  					<img class="port_info_img" id="POP_1" src="img/port_info/pop_1.png">
- 					<p>As part of a homework assignment second semester, I was tasked with gathering text from the web and using computation to perform some kind of linguistic analysis. I chose to work on an Oscar Predictor, which successfully predicted the Oscars in four categories approximately 5 hours before the actual awards show.</p>
+ 					<p>As part of a homework assignment in my Python-based Software Design course, I was tasked with gathering text from the web and using computation to perform some kind of linguistic analysis. I chose to work on an Oscar Predictor, which successfully predicted the Oscars in four categories approximately 5 hours before the actual awards show.</p>
  					<p>My partner and I gathered tweets under the hashtag #OscarPrediction2014 and sorted the tweets based on which actors, directors, actresses, and movies were mentioned in the body of the tweet. We performed sentiment analysis on each tweet and averaged the data. We produced the likelihood of positive or negative tweets that predicted who would win the Oscars in the categories of Best Actor, Best Film, Best Actress, and Best Director.</p>
  					<p>For Best Actor, we predicted Matthew McConaughey would win.</p>
  					<img class="port_info_img" id="POP_2" src="img/port_info/pop_2.png">
@@ -132,181 +233,13 @@
  					<p>For Best Director, we predicted Alfonso Cuaron would win.</p>
  					<p>For more information about this project, please check out our <a href="https://github.com/yunhsincynthiachen/Software-Design-Linguistics-Project" target="_blank">GitHub repository</a>.</p>
  				</div>
-
- 				<div class="disp_all">
- 					<a onclick="f_in(im_4_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_9.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Edge Detection</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_4_info">
- 					<h2 class="title">Optimal Edge Detection</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
- 					</ul>
- 					<p>In my Linear Algebra and Differential Equations course, I used a combined Gaussian filter and Sobel operator to optimize finding edges in an image. Edge detection is used in the real world as an instrumental part of computer vision, machine vision, and image processing. My team used edge detection to cleanly identify faces and facial features.</p>
- 					<img class="port_info_img" id="LA_1" src="img/port_info/LA_1.png">
- 					<p>Starting with the above image of Audrey Hepburn, we applied the Sobel operator to the unchanged image itself. The resulting image, shown below, was particularly noisy, picking up on subtle changes in the pixels' brightness. Applying the Gaussian filter beforehand, as we learned in this project, smoothed out the pixels. Then using Sobel, we found we could quickly and efficiently get an accurate rendering of the edges and features of Audrey Hepburn's face.</p>
- 					<img class="port_info_img" id="LA_2" src="img/port_info/LA_2.png">
- 					<p>For more information about the mathematics, please check out our <a href="https://docs.google.com/presentation/d/1PdVAlRS5dY1hPeY5tSgWeNMmeAvR-spfEMYwX8h1g5o/edit?usp=sharing" target="_blank">project presentation</a>.</p>
- 				</div>
-
- 				<div class="disp_all">
- 						<a onclick="f_in(im_5_info)" href="#PORT_anchor">
- 							<img class="portfolio_images" src="img/portfolio/im_4.png">
- 							<div class="portfolio_images_bar"></div>
- 							<div class="portfolio_images_title"><h2>Equal Colors</h2></div>
- 						</a>
- 				</div>
- 				<div class="im_info" id="im_5_info">
- 					<h2 class="title">Equal Colors</h2>
- 					<ul id="ExpIcons">
- 						<li></li>
- 					</ul>
- 					<img class="port_info_img" id="EQ_1" src="img/port_info/EQ_1.png">
- 					<p>As part of my Arts, Humanities, and Social Sciences Foundation course at Olin, I utilized principles of cyber-activism to advocate for racial equality in America. I designed and built a website, called Equal Colors, to make race a topic we can discuss. The goal of Equal Colors is to create a safe and open forum for a critical discussion on race and connect people of all different cultural and racial backgrounds.</p>
- 					<p>I placed a brief timeline of racial issues in America on my home page. I created a page entirely related to racial stereotypes and analyzed the shooting of Trayvon Martin through the lens of racial conditioning. On another page, I listed a variety of race statistics and targeted the inherent problems behind color-blind racism. I had a dedicated forum page to a variety of topics I had posed. All of these pages were geared towards eliciting some form of reaction and discussion from the viewer.</p>
- 					<img class="port_info_img" id="EQ_2" src="img/port_info/EQ_2.png">
- 					<p>Above was one method I employed to remove the taboo and stigma of race and make it an easier topic to broach. My friends and I took a bunch of selfies and then I, using Photoshop, overlayed a color over all of their exposed skin. The images were designed to help the viewer realize that race makes up one color. It can be as vairable as purple, blue, or yellow. It is an important part of a person's ethnic identity and has had a huge impact on America's history but it is also just a color. And you can discuss the way a color impacts a person's experience in this country.</p>
- 					<p>To check out the site and learn more about my cause, please visit <a href="http://zoherghadyali.wix.com/equalcolors" target="_blank">Equal Colors</a>.</p>
- 				</div>
- 				
- 				<div class="disp_all">
- 					<a onclick="f_in(im_6_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_7.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Biometric Circuits</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_6_info">
- 					<h2 class="title">Biometric Circuits</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/ee_logo.png"></li>
- 					</ul>
- 					<img class="port_info_img" id="RWM_1" src="img/port_info/RWM_1.png">
- 					<p>Working in a team of five, we built several biometric circuits to record a person's fear response to varying stimuli. Collectively, we recorded galvanic skin responses, breathing rate, blood pressure, and heart rate. </p>
- 					<img class="port_info_img" id="RWM_2" src="img/port_info/RWM_2.png">
- 					<p>I built the GSR (Galvanic Skin Response) circuit using the above schematic. This particular circuit works by comparing the resistance along skin against other resistors in a Wheatstone bridge. The general idea is that the more scared the subject is, the sweatier their skin becomes, and the lower the resistance along their skin is, compared to the other resistors in the bridge.</p>
- 					<p>We began by taking the test subject's resting response. We then monitored the voltages coming out of our circuits while exposing the test subject to horrific videos and playthroughs of scary videogames. Specifically, we wanted to measure the effect of audio in terms of fear response. In our third trial, we exposed the test subject to scary videos but muted the volume. Instead, the subject listened to calming and relaxing music.</p>
- 					<p>After looking at our data, we concluded that audio had significant impacts on the fear response. The absence of scary audio and the presence of relaxing music greatly decreased our measured fear response. The horror videogame industry definitely needs to compensate their audio departments for contributing heavily to the fear response and game immersion of their players.</p>
- 				</div>
-
- 				<div class="disp_all">
- 					<a onclick="f_in(im_7_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_5.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Robotic Sailing</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_7_info">
- 					<h2 class="title">Olin Robotic Sailing</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/ard_logo.png"></li>
- 						<li><img class="exp_logo" src="img/ee_logo.png"></li>
- 						<li><img class="exp_logo" src="img/myRIO_logo.png"></li>
-
- 					</ul>
- 					<img class="port_info_img" id="ORS_1" src="img/port_info/ORS_1.jpg">
- 					<p>I joined the Olin Robotic Sailing Team in the first semester of my freshmen year. I spent the year on the electrical team, working on redesigning our system. Our electrical system was centered around a myRIO, due to the amount of I/O it gave us for all of our instrumentation. In addition, the myRIO allowed us to prototype rapidly on protoboards and easily separated power and signal.</p>
- 					<p>In terms of redesigning our system, we had moved from servos to Dynamixels, due to their precision and position control. Dynamixels are also easily identifiable because they only respond to specifically coded packets of data and are, as a result, simple to daisy chain. We also wanted to plan our system better, waterproofing appropriately, and making sure all of our components are properly secured in the boat. We worked on redesigning our PCBs and testing our Dynamixels using an Arduino.</p>
- 					<img class="port_info_img" id="ORS_2" src="img/port_info/ORS_2.png">
- 					<img class="port_info_img" id="ORS_3" src="img/port_info/ORS_3.png">
- 					<p>Above is a signal diagram we drew during the year, categorized by signal type, and a diagram depicting the I/O and communication protocols we had access to with the myRIO. Our goal, as a team, is to accomplish a trans-Atlantic autonomous voyage.</p>
- 					<p>To hear more about this project and our progress, please check out the <a href="http://olinsailbot.com/" target="_blank">Olin Robotic Sailing page</a>.</p>
- 				</div>
-
- 				<div class="disp_all">
- 					<a onclick="f_in(im_8_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_10.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Ping Pong Models</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_8_info">
- 					<h2 class="title">The Ghost Serve</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
- 					</ul>
- 					<img class="port_info_img" id="ME_1" src="img/port_info/ME_1.png">
- 					<p>As part of a Mechanics class second semester, I worked with a partner to model a ghost serve in ping pong. In this type of serve, as shown above, the ball's second bounce on the opponent's side of the table generates enough back spin to actually bounce backwards without going over the net. This type of trick shot essentially guarantees a point to the server if they can successfully execute the serve. We knew that the serve was possible after seeing a friend of ours use the serve in everyday play and through online examples.</p>
- 					<p>We first had to prove in our model that the serve was possible and then from there, we chose to optimize the serve by varying the initial amount of backspin on the ball. Below are free-body diagrams for the flight and bounce models of our ball, post-serve. As shown in the diagram above, we had three separate flight phases and two bounce phases, with different equations depending on whether we were in flight or bounce.</p>
- 					<img class="port_info_img" id="ME_2" src="img/port_info/ME_2.png">
- 					<p>Varying initial horizontal velocity and rotational velocity, we produced the punchline graph below where we isolated the region in which a legal ghost serve is successfully completed.</p>
- 					<img class="port_info_img" id="ME_3" src="img/port_info/ME_3.jpg">
- 					<p>After selecting an initial horizontal velocity of 6 m/s that produced a legal serve no matter how much backspin was placed on the ball, we varied initial backspin to optimize the ghost serve. We wanted to know how much backspin you would have to put on the ball to travel the greatest horizontal velocity backwards after the second bounce. Below is our optimization graph, where the greatest negative distance is our optimized ghost serve.
- 					<img class="port_info_img" id="ME_4" src="img/port_info/ME_4.jpg">
- 					<p>For more information about our model, please check out our <a href="https://www.dropbox.com/s/wx9gu4nw5b8o4es/Ping_Pong_Paper.pdf?dl=0" target="_blank">paper</a>.</p>
- 				</div>
-
-
- 				<div class="disp_all">
- 					<a onclick="f_in(im_9_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_8.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Sound Locks</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_9_info">
- 					<h2 class="title">Sound Locks</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/ee_logo.png"></li>
- 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
- 					</ul>
- 					<img class="port_info_img" id="MC_1" src="img/port_info/MC_1.jpg">
- 					<p>My final project in my first electrical engineering class was to design and build a circuit that would only "unlock" when the correct tone was played. In terms of the circuitry, we defined unlocking with an LED lighting up but we could have amplified the output voltage and actually moved a servo.</p>
- 					<p>As shown in the above diagram, we took the input signal and put it through a first-order bandpass filter to center in on as narrow a range of frequencies as we could using this filter. We then placed the filtered signal through a rectifier to convert our AC signal to DC. We amplified our signal at this point and fed it through an integrator so that the right range of frequencies needed to be sustained for a period of time before the circuit would unlock.</p>
- 					<p>For more information about this project, read our <a href="https://www.dropbox.com/s/9zd181uqwdrpdvx/ModCon_Final_Project_Report.pdf?dl=0" target="_blank">report</a> or check out this educational <a href="https://www.youtube.com/watch?v=_8q1zZQptIY" target="_blank">video</a> and advertisement we made for our product.</p>
- 				</div>
-
- 				<div class="disp_all">
- 					<a onclick="f_in(im_10_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_6.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Pharmacokinetics</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_10_info">
- 					<h2 class="title">Pharmacokinetics</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/matlab_logo.png"></li>
- 					</ul>
- 					<img class="port_info_img" id="MS_1" src="img/port_info/MS_1.png">
- 					<p>Working with a partner, I built a model that analyzed the pharmacokinetics of the drug Gemcitabine, which is a commonly used chemotherapy drug for pancreatic cancer. In analyzing the pharmacokinetics, we wanted to understand how the drug moves through the body and where it ends up. Injected intravenously, as shown in the models above, some of the drug is lost in urine while some of it makes it to both healthy neutrophils and cancer cells. In our model, we created dead cell counters to determine the effectiveness of the drug. We varied percent targeting, i.e. how much of the drug makes it to cancer cells versus healthy cells, and initial dosage.
- 					<img class="port_info_img" id="MS_2" src="img/port_info/MS_2.png">
- 					<p>As shown in the above graph, we see that as we increase the initial dosage at low levels of targeting, we kill more healthy cells but as we increase percent targeting, we are killing less and less healthy cells. This allows us to administer higher initial doses of the drug. This graph shows us that the model makes sense and is behaving in the way we expect, as does the graph below.</p>
- 					<img class="port_info_img" id="MS_3" src="img/port_info/MS_3.png">
- 					<p>Similarly, this graph shows that as percent targeting and initial dosage increase, we kill more and more cancer cells and enter our success case, in which we kill cancer cells faster than they grow. Below is our punchline figure.</p>
- 					<img class="port_info_img" id="MS_4" src="img/port_info/MS_4.png">
- 					<p>Combining the above two graphs, we created our punchline figure in which we separate the behavior of the drug into 4 categories: not effective, killing too many healthy cells and posing a risk to the patient, successfully killing cancer cells, and wasting the drug. What we discovered is that as we increase percent targeting, we can exponentially increase initial dosage to maximize effectiveness.</p>
- 					<p>For more information about this project, please check out our <a href="https://www.dropbox.com/s/xotxd369xz1xips/ModSim_P2_Poster.pdf?dl=0" target="_blank">final poster</a>.</p>
-
- 				</div>
-
- 				<div class="disp_all">
- 					<a onclick="f_in(im_11_info)" href="#PORT_anchor">
- 						<img class="portfolio_images" src="img/portfolio/im_11.png">
- 						<div class="portfolio_images_bar"></div>
- 						<div class="portfolio_images_title"><h2>Squirrel Design</h2></div>
- 					</a>
- 				</div>
- 				<div class="im_info" id="im_11_info">
- 					<h2 class="title">Sneaky &amp Squeaky Squirrel</h2>
- 					<ul id="ExpIcons">
- 						<li><img class="exp_logo" src="img/mech_logo.png"></li>
- 					</ul>
- 					<img class="port_info_img" id="DN_1" src="img/port_info/DN_1.jpg">
- 					<p>The story: Sneaky Squirrel and Squeaky Squirrel are gathering food for the approaching winter. Sneaky Squirrel runs along the top of the tree and knocks acorns down with its tail to Squeaky Squirrel, waiting on the forest floor. However, the tree is full of holes and obstacles so Sneaky and Squeaky Squirrel need your help to gather the acorns. You have 30 seconds to build a path from Sneaky to Squeaky.</p>
- 					<p>Working in a team of 5, we had to design a game for 4th graders centering around a specific motion of an animal of our choosing. My team worked with the bounding motion of a squirrel. We assembled a puzzle where our squirrel, which we called Sneaky Squirrel, would bound along at the top of a ramp and knock an acorn down with its tail. The players would know which acorn was being knocked down and had 30 seconds to build a path from Sneaky Squirrel, at the top, to Squeaky Squirrel, who waited at the bottom to catch the acorn. The players were free to move Squeaky Squirrel along the bottom of the ramp and, using path pieces we had previously assembled, were free to place them anywhere along the ramp.</p>
- 					<p>Our goal was to get a group of 4th graders working together to solve the puzzle but we found more success when a single child played the game. They could think more cohesively and assemble the path themselves, instead of the chaos of 5 or 6 kids constantly moving path pieces.</p>
- 				</div>
  				
  				<div id="AM_anchor"></div>
  			</div>
 
  			<div id="AM_bg">
  				<img id="ABOUTME" src="img/aboutme_title.png">
- 				<img id="Self" src="img/Self.jpg">
+ 				<img id="Self" src="img/Self.png">
  				<div id="AM_content">
  				<p>I am not an engineer who has been writing C# or Java since I was 5. I am an engineer who picks things up quickly and who solves problems. While I may make the same mistake twice, I probably won't make it a third time.</p>
  				<p>Currently, I am a sophomore at the Olin College of Engineering in Needham, Massachusetts. I am working on an Electrical and Computer Engineering major.</p>
