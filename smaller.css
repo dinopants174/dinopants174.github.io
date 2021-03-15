@@ -14,11 +14,15 @@
 
 	#NavBar_Top{
 		margin-top:0.5%;
+		margin-right: auto;    
+		margin-left: auto;    
+		max-width: 100%;    
+		min-width: 980px;
 	}
 
 	#NavBar_Top li{
-		padding:4%;
 		text-align: center;
+		margin-left: 0;
 	}
 
 	.SM_im{
@@ -186,7 +190,24 @@
 		margin-left: 80%;
 	}
 
-	#contact_info{
-		margin-left: 1%;
+	#contact_content1{
+		width: 95%;
+		margin-top: 100px;
+	}
+	
+	#contact_content2{
+		width: 95%;
+		margin-left: 2.5%;
+	}
+	
+	#contact_content2 td{
+		padding: 1.5%;
+	}
+	
+	#contact_flair{
+		width:20%;
+		height:auto;
+		margin-top: -100px;
+		margin-left: 77.5%;
 	}
 }

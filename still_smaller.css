@@ -1,6 +1,18 @@
 @media screen and (max-width: 800px){
+	#pagewrap{
+		width:100%;
+	}
+
+	#NavBar_Top{
+		margin-right: auto;    
+		margin-left: auto;    
+		max-width: 100%;    
+		min-width: 800px;
+	}
+
 	#NavBar_Top li{
-		padding:3%;
+		text-align: center;
+		padding: 4%;
 	}
 
 	#SMIcons{
