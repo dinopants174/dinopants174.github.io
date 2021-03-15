@@ -35,11 +35,26 @@
 	#CONTACT{
 		height:40px;
 	}
-
-	#contact_info{
-		width:95%;
-		margin-left: 2.5%;
+	
+	#contact_content1{
+		width: 95%;
 		margin-top: 100px;
+	}
+	
+	#contact_content2{
+		width: 95%;
+		margin-left: 2.5%;
+	}
+	
+	#contact_content2 td{
+		padding: 1.5%;
+	}
+	
+	#contact_flair{
+		width:20%;
+		height:auto;
+		margin-top: -100px;
+		margin-left: 2.5%;
 	}
 
 	#SMIcons2{
